@@ -7,7 +7,14 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        urbanist: "var(--urbanist-font)",
+      },
+      colors: {
+        art: {},
+      },
+    },
   },
   plugins: [],
 };
