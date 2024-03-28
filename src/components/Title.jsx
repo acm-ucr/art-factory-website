@@ -1,7 +1,11 @@
 import React from "react";
 
 const Title = () => {
-  return <div>Title</div>;
+  return (
+    <div>
+      <p>Title</p>
+    </div>
+  );
 };
 
 export default Title;
