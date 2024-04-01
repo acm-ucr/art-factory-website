@@ -12,7 +12,15 @@ module.exports = {
         urbanist: "var(--urbanist-font)",
       },
       colors: {
-        art: {},
+        art: {
+          darkblue: "#1E0F75",
+          blue: "#1C1DAB",
+          lightblue: "#3785D8",
+          purple: "#ADC6E5",
+          pink: "#1E0F75",
+          lightpink: "#1E0F75",
+          gray: "#1E0F75",
+        },
       },
     },
   },
