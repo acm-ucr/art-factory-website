@@ -4,6 +4,14 @@ export const Board = [
     title: "Lead Software Engineer",
     image: "woof",
   },
+  {
+    name: "Menthy Wu",
+    title: "Lead Software Engineer",
+    image: "bark",
+  },
+  {
+    name: "Divyank Shah",
+    title: "Lead Software Engineer",
+    image: "bruh",
+  },
 ];
-
-export default Board;
