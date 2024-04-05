@@ -3,13 +3,14 @@ import Link from "next/link";
 
 const Button = ({ text, link }) => {
   return (
-    <Link
-      className=" py-1 px-14 bg-art-purple/50 border-1 border-[#C08CE1] ring-[2px] ring-offset-1 ring-offset-art-purple ring-art-purple/30
-    text-white font-bold rounded-full shadow-md hover:shadow-lg transition-transform duration-200 drop-shadow-2xl"
-      href={link}
-    >
-      {text}
-    </Link>
+    <div className="py-0.5 ring-2 ring-art-purple ring-offset-4 rounded-full drop-shadow-[4px_4px_1px_rgba(191,140,225,.70)]">
+      <Link
+        href={link}
+        className="py-1 px-16 bg-art-purple/35 ring-4 ring-offset-[2px] ring-offset-art-purple ring-art-purple/30 text-white text-xl font-bold rounded-full"
+      >
+        {text}
+      </Link>
+    </div>
   );
 };
 
