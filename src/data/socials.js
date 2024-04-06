@@ -4,36 +4,27 @@ import { MdEmail } from "react-icons/md";
 import { FaLink } from "react-icons/fa";
 import { PiTiktokLogoBold } from "react-icons/pi";
 
+const style = "text-4xl my-1.5 rotate-90";
+
 export const socials = [
-  // pyNumb used to center the smaller link icon with the other larger ones
   {
-    icon: <FaDiscord size="48px" />,
+    icon: <FaDiscord />,
     name: "Discord",
-    color: "text-art-pink-100",
-    pyNumb: "",
   },
   {
-    icon: <AiFillInstagram size="48px" />,
+    icon: <AiFillInstagram />,
     name: "Instagram",
-    color: "text-art-blue-200",
-    pyNumb: "",
   },
   {
-    icon: <MdEmail size="48px" />,
+    icon: <MdEmail />,
     name: "Email",
-    color: "text-art-pink-100",
-    pyNumb: "",
   },
   {
-    icon: <PiTiktokLogoBold size="48px" />,
+    icon: <PiTiktokLogoBold />,
     name: "TikTok",
-    color: "text-art-pink-100",
-    pyNumb: "",
   },
   {
-    icon: <FaLink size="32px" />,
+    icon: <FaLink className={style} />,
     name: "Highlander",
-    color: "text-art-pink-100",
-    pyNumb: "py-2",
   },
 ];
