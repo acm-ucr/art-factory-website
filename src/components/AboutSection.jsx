@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const AboutSection = () => {
   return (
-    <div className="w-full flex flex-col items-center text-center gap-6">
+    <div className="w-9/12 flex flex-col items-center text-center gap-8 mb-0">
       <p>About Us</p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
