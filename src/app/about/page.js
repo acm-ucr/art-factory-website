@@ -1,8 +1,8 @@
 import React from "react";
-import About from "@/components/About";
+import AboutSection from "@/components/AboutSection";
 
 const page = () => {
-  return <About />;
+  return <AboutSection />;
 };
 
 export default page;

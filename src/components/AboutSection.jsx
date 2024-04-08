@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 
-const About = () => {
+const AboutSection = () => {
   return (
     <div className="w-full flex flex-col items-center text-center gap-6">
       <p>About Us</p>
@@ -29,4 +29,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutSection;
