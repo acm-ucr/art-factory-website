@@ -2,9 +2,7 @@ import React from "react";
 import About from "@/components/About";
 
 const page = () => {
-  return (
-    <About />
-  );
+  return <About />;
 };
 
 export default page;
