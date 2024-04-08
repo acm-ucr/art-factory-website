@@ -1,12 +1,12 @@
 import React from "react";
 import { socials } from "@/data/socials.js";
+import Title from "./Title";
 
 const Socials = () => {
   return (
     <div>
       <div className="flex flex-col items-center">
-        <p className="text-art-pink-100 text-lg font-bold ">Get Involved</p>
-        <hr className="border-2 border-art-pink-100 w-12 rounded-full" />
+        <Title text="Get Involved" />
         <div className="flex my-5 space-x-10">
           {socials.map((social, index) => (
             <div
