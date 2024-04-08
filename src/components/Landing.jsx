@@ -5,9 +5,9 @@ import React from "react";
 
 const Landing = () => {
   return (
-    <div className="flex justify-center px-4 py-4">
+    <div className="flex justify-center py-4">
       <Image src={landingbg} alt="Landing Picture" className="w-5/6" />
-      <div className="absolute z-10 flex items-center justify-center mt-[13%] md:mt-[16%] px-8">
+      <div className="absolute z-10 flex items-center justify-center mt-[14.5%] md:mt-[16%] px-8">
         <Image src={landingtitle} alt="landingtitle" className="w-5/6" />
       </div>
     </div>
