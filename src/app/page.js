@@ -4,7 +4,6 @@ import Landing from "@/components/Landing";
 import ProjectTypes from "@/components/ProjectTypes";
 import AboutSection from "@/components/AboutSection";
 
-
 const Home = () => {
   return (
     <div className="w-full flex flex-col items-center gap-4">
