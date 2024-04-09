@@ -20,6 +20,7 @@ module.exports = {
           "pink-100": "#E893C5",
           "pink-200": "#EBB2C3",
           purple: "#BF8CE1",
+          "purple-100": "#5F60D1",
           gray: "#CBD8E8",
         },
       },

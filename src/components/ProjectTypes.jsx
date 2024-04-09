@@ -13,33 +13,33 @@ const Cards = () => {
         <ProjectType
           icon={paintbrush}
           title="Painting"
-          description="Description for Painting"
-          className="bg-[#BF8CE1]"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          className="bg-art-purple"
         />
         <ProjectType
           icon={pencil}
           title="Sketching"
-          description="Description for Sketching"
-          className="bg-[#1C1DAB]"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          className="bg-art-purple-100"
         />
         <ProjectType
           icon={hand}
           title="Crafting"
-          description="Description for Crafting"
-          className="bg-[#BF8CE1]"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          className="bg-art-purple"
         />
         <div className="w-full flex justify-center">
           <ProjectType
             icon={origami}
             title="DIY"
-            description="Description for DIY"
-            className="bg-[#BF8CE1]"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+            className="bg-art-purple"
           />
           <ProjectType
             icon={Vector}
             title="Studio Time"
-            description="Description for Studio Time"
-            className="bg-[#1C1DAB]"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+            className="bg-art-purple-100"
           />
         </div>
       </div>
