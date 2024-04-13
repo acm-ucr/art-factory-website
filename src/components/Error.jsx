@@ -4,12 +4,12 @@ import errorclouds from "../../public/errorclouds.svg";
 import oopseasel from "../../public/oopseasel.svg";
 const Error = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-fit mx-8 mt-28">
-      <div className="grid grid-cols-2 gap-2">
+    <div className="flex flex-col justify-center items-center h-fit mx-16 mt-8 md:mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-2">
         <div>
           <Image src={oopseasel} alt="oopseasel" className="w-10/12" />
         </div>
-        <div className="flex-col items-center text-center ">
+        <div className="flex-col items-center text-center md:mt-14 w-11/12">
           <div className="flex-col inline-flex">
             <div className="flex justify-center bg-clip-text text-transparent bg-gradient-to-r from-art-pink-300 to-art-purple-200 text-2xl md:text-4xl font-bold ">
               404
@@ -31,7 +31,7 @@ const Error = () => {
       <Image
         src={errorclouds}
         alt="Error Clouds"
-        className=" absolute top-[25%] z-[-1]"
+        className=" absolute top-[60%] md:top-[28%] z-[-1]"
       />
     </div>
   );

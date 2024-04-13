@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 const Button = ({ text, link }) => {
   return (
-    <button className="border-[7.5px] border-art-purple rounded-full py-[1.5px] drop-shadow-[4px_4px_1px_rgba(191,140,225,.70)]">
+    <button className="border-[7.5px] border-art-purple rounded-full md:py-[1.5px] pt-[1.25px] pb-[2.25px] drop-shadow-[4px_4px_1px_rgba(191,140,225,.70)]">
       <Link
         href={link}
         className="py-1 px-8 md:px-12 bg-art-purple-300 ring-4 ring-offset-[1.5px] ring-art-pink-400 ring-offset-art-purple  text-white text-sm md:text-lg font-bold rounded-full"
