@@ -3,9 +3,8 @@ import React, { useState } from "react";
 import PhotoCard from "@/components/PhotoCard";
 import { FaAngleRight } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa";
-import { cards } from "@/data/photos.js";
 
-const GalleryCards = () => {
+const GalleryCards = ({ cards }) => {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
 
   const handleLeftClick = () => {
