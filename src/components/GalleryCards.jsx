@@ -30,13 +30,7 @@ const GalleryCards = ({ cards }) => {
         {cards
           .slice(currentCardIndex, currentCardIndex + 3)
           .map((card, index) => (
-            <PhotoCard
-              key={index}
-              icon={card.icon}
-              title={card.title}
-              description={card.description}
-              className={card.className}
-            />
+            <PhotoCard key={index} icon={card.icon} />
           ))}
         <button onClick={handleRightClick}>
           <div className="text-5xl text-art-pink-400 hover:text-art-purple-300">
