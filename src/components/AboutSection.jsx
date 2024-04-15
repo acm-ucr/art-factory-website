@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "./Button";
+import Title from "./Title";
 
 const AboutSection = () => {
   return (
     <div className="w-9/12 flex flex-col items-center text-center gap-8 mb-0">
-      <p>About Us</p>
+      <Title text = "About Us"/>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -14,8 +15,8 @@ const AboutSection = () => {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </p>
-      <Button text="LEARN MORE" link="/about" />
-      <p>What We Do</p>
+      <Button text="LEARN MORE" link="/about"/>
+      <Title text = "What We Do"/>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
