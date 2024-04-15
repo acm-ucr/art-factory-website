@@ -3,7 +3,6 @@ import Socials from "@/components/Socials";
 import Landing from "@/components/Landing";
 import ProjectTypes from "@/components/ProjectTypes";
 import AboutSection from "@/components/AboutSection";
-import GalleryHeader from "@/components/GalleryHeader";
 
 const Home = () => {
   return (
@@ -12,7 +11,6 @@ const Home = () => {
       <AboutSection />
       <ProjectTypes />
       <Socials />
-      <GalleryHeader text="Clay" />
     </div>
   );
 };
