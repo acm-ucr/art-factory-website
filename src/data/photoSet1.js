@@ -6,18 +6,18 @@ import vector from "@/public/cards/Vector.svg";
 
 export const cards = [
   {
-    icon: paintbrush,
+    image: paintbrush,
   },
   {
-    icon: pencil,
+    image: pencil,
   },
   {
-    icon: hand,
+    image: hand,
   },
   {
-    icon: origami,
+    image: origami,
   },
   {
-    icon: vector,
+    image: vector,
   },
 ];
