@@ -1,5 +1,5 @@
-import landingbg from "../../public/landingbg.svg";
-import landingtitle from "../../public/landingtitle.svg";
+import landingbg from "@/public/landingbg.svg";
+import landingtitle from "@/public/landingtitle.svg";
 import Image from "next/image";
 import React from "react";
 
