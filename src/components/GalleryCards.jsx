@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import PhotoCard from "@/components/PhotoCard";
+import Image from "next/image";
 import { FaAngleRight } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa";
 
@@ -30,7 +30,14 @@ const GalleryCards = ({ cards }) => {
         {cards
           .slice(currentCardIndex, currentCardIndex + 3)
           .map((card, index) => (
-            <PhotoCard key={index} image={card.image} />
+            <div
+              key={index}
+              className={
+                "m-4 w-80 h-80 rounded-xl flex justify-center items-center bg-art-purple-100"
+              }
+            >
+              <Image src={card.image} alt="Image" />
+            </div>
           ))}
         <button onClick={handleRightClick}>
           <div className="text-5xl text-art-pink-400 hover:text-art-purple-300">
