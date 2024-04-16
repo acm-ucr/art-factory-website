@@ -4,7 +4,8 @@ import pencil from "@/public/cards/pencil.svg";
 import origami from "@/public/cards/origami.svg";
 import vector from "@/public/cards/Vector.svg";
 
-export const cards = [
+export const clay = [
+  // Replace these with actual images in clay category
   {
     image: paintbrush,
   },
@@ -21,3 +22,7 @@ export const cards = [
     image: vector,
   },
 ];
+export const crafts = [];
+export const studioTime = [];
+export const paint = [];
+export const sketching = [];
