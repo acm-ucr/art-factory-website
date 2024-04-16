@@ -1,5 +1,5 @@
 import React from "react";
-import GalleryCards from "@/components/GalleryCards";
+import GalleryCards from "@/components/gallery/GalleryCards";
 import * as images from "@/data/images.js";
 
 const page = () => {
