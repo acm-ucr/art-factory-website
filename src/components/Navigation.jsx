@@ -5,7 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
 import Image from "next/image";
 // import hry from "../../public/icon.png";
-import Logo from "../../public/Logo.svg"
+import Logo from "../../public/icon.png";
+import { items } from "@/data/navigation";
 
 const Navigation = () => {
   // const [selected, setSelected] = useState("");
@@ -22,39 +23,37 @@ const Navigation = () => {
           eventkey="1"
           className="p-0 flex justify-center items-center"
           href="/"
-          onClick={() => setSelected("")}
+          // onClick={() => setSelected("")}
         >
-          <Image src={Logo} className="h-[7vh] w-[7vh]" alt="HSP at UCR"/>
+          <Image src={Logo} className="h-[7vh] w-[7vh]" alt="Art Factory" />
           <div className="text-white text-3xl md:text-5xl font-montserrat font-bold ml-4">
             Art Factory
           </div>
         </Link>
       </Navbar.Brand>
-      
-     
-     
 
-        
-        <Nav className="w-full md:w-6/12 ml-auto no-underline text-2xl flex justify-end">
-            {items.map((item, index) => (
-              <Nav.Link
-                as={Link}
-                key={index}
-                href={item.link}
-                pathname={item.name}
-                className="text-white hover:cursor-pointer">
-                  {item.name}
-              </Nav.Link>
-            ))}
-          
-      
-          
-          
-         
-        </Nav>
-        
+      <Nav className="w-full md:w-6/12 no-underline text-3xl gap-4 flex items-center justify-end mr-5 font-semibold">
+        {items.map((item, index) => (
+          <Nav.Link
+            as={Link}
+            key={index}
+            href={item.link}
+            pathname={item.name}
+            className="text-white hover:cursor-pointer"
+          >
+            {item.name}
+          </Nav.Link>
+        ))}
+        <Nav.Link
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+          as={Link}
+          target="_blank"
+          className="bg-art-purple rounded-full w-fit px-6 py-1 flex justify-center text-white"
+        >
+          JOIN
+        </Nav.Link>
+      </Nav>
     </Navbar>
-    
   );
 };
 
