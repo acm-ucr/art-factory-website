@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
 import Image from "next/image";
-// import hry from "../../public/icon.png";
 import Logo from "../../public/icon.svg";
 import { items } from "@/data/navigation";
 
