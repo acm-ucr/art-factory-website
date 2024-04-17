@@ -4,8 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
 import Image from "next/image";
-// import hry from "../../public/icon.png";
-import Logo from "../../public/icon.png";
+// import hry from "../../public/icon.webp";
+import Logo from "../../public/icon.webp";
 import { items } from "@/data/navigation";
 
 const Navigation = () => {
