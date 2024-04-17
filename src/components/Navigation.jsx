@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
 import Image from "next/image";
 // import hry from "../../public/icon.png";
-import Logo from "../../public/icon.png";
+import Logo from "../../public/icon.svg";
 import { items } from "@/data/navigation";
 
 const Navigation = () => {
@@ -44,14 +44,14 @@ const Navigation = () => {
           >
             {item.name}
             <div className="flex justify-center">
-                  <div
-                    className={
-                      selected === item.name
-                        ? "bg-art-purple p-1 rounded-full"
-                        : "p-1"
-                    }
-                  ></div>
-                </div>
+              <div
+                className={
+                  selected === item.name
+                    ? "bg-art-purple p-1 rounded-full"
+                    : "p-1"
+                }
+              ></div>
+            </div>
           </Nav.Link>
         ))}
         <Nav.Link
@@ -61,7 +61,6 @@ const Navigation = () => {
           className="bg-art-purple rounded-full w-fit px-6 py-1 flex justify-center text-white"
         >
           JOIN
-
         </Nav.Link>
       </Nav>
     </Navbar>
