@@ -1,6 +1,18 @@
 export const items = [
   {
-    name: "",
-    link: "/",
+    name: "about",
+    link: "about",
+  },
+  {
+    name: "board",
+    link: "board",
+  },
+  {
+    name: "events",
+    link: "events",
+  },
+  {
+    name: "gallery",
+    link: "gallery",
   },
 ];
