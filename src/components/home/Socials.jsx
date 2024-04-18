@@ -1,6 +1,6 @@
 import React from "react";
 import { socials } from "@/data/socials.js";
-import Title from "./Title";
+import Title from "../Title";
 
 const Socials = () => {
   return (
