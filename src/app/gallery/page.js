@@ -7,10 +7,10 @@ const page = () => {
   return (
     <div className="w-full flex flex-col items-center">
       <p>Gallery</p>
-      <GalleryCards cards={images.clay} />
       <GalleryHeader text="Clay" />
       <GalleryHeader text="Crafts" />
       <GalleryHeader text="Studio Time" />
+      <GalleryCards cards={images.clay} />
     </div>
   );
 };
