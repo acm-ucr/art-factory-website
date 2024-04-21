@@ -21,24 +21,30 @@ const GalleryCards = ({ cards }) => {
 
   return (
     <div>
-      <div className="flex justify-center flex-wrap w-full">
+      <div
+        style={{ display: "flex", flexWrap: "nowrap" }}
+        className="w-full flex justify-center items-center flex-wrap w-full"
+      >
         <button onClick={handleLeftClick}>
           <div className="text-5xl text-art-pink-400 hover:text-art-purple-300">
             <FaAngleLeft />
           </div>
         </button>
-        {cards
-          .slice(currentCardIndex, currentCardIndex + 3)
-          .map((card, index) => (
-            <div
-              key={index}
-              className={
-                "m-4 w-80 h-80 rounded-xl flex justify-center items-center bg-art-purple-100"
-              }
-            >
-              <Image src={card.image} alt="Image" />
-            </div>
-          ))}
+        <div className="m-4 w-60 h-60 rounded-xl flex justify-center items-center bg-art-purple-100">
+          <div className="flex items-center justify-center">
+            <Image src={cards[currentCardIndex].image} alt="Image" />
+          </div>
+        </div>
+        <div className="m-4 w-60 h-60 rounded-xl flex justify-center items-center bg-art-purple-100 hidden sm:block">
+          <div className="flex items-center justify-center">
+            <Image src={cards[currentCardIndex + 1].image} alt="Image" />
+          </div>
+        </div>
+        <div className="m-4 w-60 h-60 rounded-xl flex justify-center items-center bg-art-purple-100 hidden md:block">
+          <div className="flex items-center justify-center">
+            <Image src={cards[currentCardIndex + 2].image} alt="Image" />
+          </div>
+        </div>
         <button onClick={handleRightClick}>
           <div className="text-5xl text-art-pink-400 hover:text-art-purple-300">
             <FaAngleRight />
