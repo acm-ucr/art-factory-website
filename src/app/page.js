@@ -6,7 +6,7 @@ import AboutSection from "@/components/home/AboutSection";
 
 const Home = () => {
   return (
-    <div className="w-full flex flex-col items-center gap-4">
+    <div className="w-full flex flex-col items-center gap-6">
       <Landing />
       <AboutSection />
       <ProjectTypes />
