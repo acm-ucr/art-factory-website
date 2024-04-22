@@ -1,9 +1,10 @@
 import React from "react";
+import Board from "@/components/Board";
 
 const page = () => {
   return (
     <div className="w-full flex flex-col items-center">
-      <p>board</p>
+      <Board />
     </div>
   );
 };
