@@ -4,7 +4,7 @@ import Title from "../Title";
 
 const AboutSection = () => {
   return (
-    <div className="w-9/12 flex flex-col items-center text-center gap-8 mb-0">
+    <div className="w-9/12 flex flex-col items-center text-center gap-10 mb-0">
       <Title text="About Us" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
