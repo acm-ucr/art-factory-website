@@ -7,9 +7,9 @@ const page = () => {
     <div className="flex flex-col items-center">
       <AboutLanding />
       <div className=" mt-16">
-      <About />
+        <About />
       </div>
-      </div>
+    </div>
   );
 };
 
