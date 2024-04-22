@@ -1,23 +1,33 @@
 import test from "../../public/jonathan2024.webp";
 export const Board = [
   {
-    name: "Sachin Chopra",
-    title: "Lead Software Engineer",
+    name: "Pamela Gomez",
+    title: "President",
     image: test,
   },
   {
-    name: "Menthy Wu",
-    title: "Lead",
+    name: "Lydia Niu",
+    title: "Vice President",
     image: test,
   },
   {
-    name: "Divyank Shah",
-    title: "Projects Director",
+    name: "Rifa Sanjidah",
+    title: "Secretary",
     image: test,
   },
   {
-    name: "Eliot Lee",
-    title: "Treasurer Fix Fix Fix Psych",
+    name: "Ricky Le",
+    title: "Treasurer",
+    image: test,
+  },
+  {
+    name: "Tran Nguyen",
+    title: "Social Media",
+    image: test,
+  },
+  {
+    name: "Adreyan Distor",
+    title: "Social Media",
     image: test,
   },
 ];
