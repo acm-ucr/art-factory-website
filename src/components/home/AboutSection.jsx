@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./Button";
-import Title from "./Title";
+import Button from "../Button";
+import Title from "../Title";
 
 const AboutSection = () => {
   return (

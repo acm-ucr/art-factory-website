@@ -1,14 +1,14 @@
 /* eslint-disable new-cap */
 import Navigation from "@/components/Navigation";
 import "./globals.css";
-import { Urbanist } from "next/font/google";
+import { Nunito } from "next/font/google";
 import Footer from "@/components/Footer";
 
-const urbanist = Urbanist({
+const nunito = Nunito({
   subsets: ["latin"],
   display: "swap",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--urbanist-font",
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--nunito-font",
 });
 
 export const metadata = {
@@ -18,8 +18,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${urbanist.variable}`}>
-      <body className="bg-white text-black w-screen overflow-x-hidden font-urbanist">
+    <html lang="en" className={`${nunito.variable}`}>
+      <body className="bg-white text-black w-screen overflow-x-hidden font-nunito">
         <Navigation />
         {children}
         <Footer />

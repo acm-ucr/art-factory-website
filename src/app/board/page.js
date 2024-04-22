@@ -1,10 +1,12 @@
 import React from "react";
-import Board from "@/components/Board";
+import Title from "@/components/Title";
+import Cards from "@/components/board/Cards";
 
 const page = () => {
   return (
     <div className="w-full flex flex-col items-center">
-      <Board />
+      <Title text={"Meet the Board"} />
+      <Cards />
     </div>
   );
 };
