@@ -13,8 +13,7 @@ const Footer = () => {
         <Image src={Logo} className="scale-75" />
         <div className="text-white font-nunito text-3xl font-semibold">
           Art Factory
-        </div>{" "}
-        {/* Use font-nunito class */}
+        </div>
       </div>
       <div className="flex gap-10 items-center mr-4">
         <FaDiscord className="text-4xl text-white" />
