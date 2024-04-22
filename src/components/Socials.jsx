@@ -4,14 +4,14 @@ import Title from "./Title";
 
 const Socials = () => {
   return (
-    <div className="w-full">
+    <div className="w-5/6">
       <div className="flex flex-col items-center">
         <Title text="Get Involved" />
-        <div className="flex justify-around my-5 md:container mx-auto">
+        <div className="container mx-auto flex justify-around">
           {socials.map((social, index) => (
             <div
               key={index}
-              className="flex flex-col items-center object-contain text-7xl text-art-pink-100 hover:text-art-purple-100"
+              className="flex flex-col items-center object-contain text-5xl lg:text-7xl text-art-pink-100 hover:text-art-purple-100"
             >
               {social.icon}
               <p className="text-base font-bold">{social.name}</p>
