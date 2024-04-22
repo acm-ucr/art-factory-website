@@ -4,13 +4,13 @@ import right from "../../../public/rightring.svg";
 import left from "../../../public/leftring.svg";
 import logo from "../../../public/LogoLanding.svg";
 
-const Landing = () => {
+const AboutLanding = () => {
   return (
     <div className="bg-white flex flex-col items-center justify-center relative">
       <Image
         src={left}
         alt="leftring"
-        className="absolute left-[32%] top-[67%] w-64 rotate-3"
+        className="absolute -left-[9%] top-[67%] w-64 rotate-3"
       />
 
       <div className="text-purple-400 text-6xl tracking-[25px] drop-shadow-xl font-bold mt-20 ">
@@ -28,7 +28,7 @@ const Landing = () => {
       <Image
         src={right}
         alt="rightring"
-        className="absolute right-[32%] top-[30%] w-64 rotate-3"
+        className="absolute -right-[8%] top-[30%] w-64 rotate-3"
       />
     </div>
   );
