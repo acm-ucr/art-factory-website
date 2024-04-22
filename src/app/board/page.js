@@ -1,6 +1,6 @@
 import React from "react";
-import Cards from "@/components/board/Cards";
 import Title from "@/components/Title";
+import Cards from "@/components/board/Cards";
 
 const page = () => {
   return (
