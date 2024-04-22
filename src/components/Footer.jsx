@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "@/public/paint.svg";
+import paintbrush from "@/public/paint.svg";
 import { FaDiscord } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className="flex justify-between bg-art-purple-100 p-1">
       <div className="flex items-center gap-3 ">
-        <Image src={Logo} className="scale-75" />
+        <Image src={paintbrush} alt="brush icon" className="scale-75" />
         <div className="text-white font-nunito text-3xl font-semibold">
           Art Factory
         </div>
