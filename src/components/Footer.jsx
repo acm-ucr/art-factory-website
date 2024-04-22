@@ -11,7 +11,9 @@ const Footer = () => {
     <div className="flex justify-between bg-art-purple-100 p-1">
       <div className="flex items-center gap-3 ">
         <Image src={Logo} className="scale-75" />
-        <div className="text-white font-nunito text-3xl font-semibold">Art Factory</div>{" "}
+        <div className="text-white font-nunito text-3xl font-semibold">
+          Art Factory
+        </div>{" "}
         {/* Use font-nunito class */}
       </div>
       <div className="flex gap-10 items-center mr-4">
