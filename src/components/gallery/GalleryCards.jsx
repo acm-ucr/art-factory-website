@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { FaAngleRight } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa";
+import GalleryHeader from "./GalleryHeader";
 
 const GalleryCards = ({ cards, title }) => {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
@@ -21,7 +22,7 @@ const GalleryCards = ({ cards, title }) => {
 
   return (
     <div className=" flex justify-center flex-col items-center w-full gap-6 mb-3">
-      {/* <GalleryHeader text={title} /> */}
+      <GalleryHeader text={title} />
       <div className="flex w-full justify-center gap-10 mt-2">
         <button
           onClick={handleLeftClick}
