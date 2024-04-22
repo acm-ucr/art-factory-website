@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { FaAngleRight } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa";
+import GalleryHeader from "./GalleryHeader";
 
 const GalleryCards = ({ cards }) => {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
@@ -24,6 +25,7 @@ const GalleryCards = ({ cards }) => {
       style={{ display: "flex", flexWrap: "nowrap" }}
       className="w-4/6 flex justify-center items-center w-full"
     >
+          <GalleryHeader text="Clay" />
       <button
         onClick={handleLeftClick}
         className="flex justify-center items-center"
@@ -51,6 +53,7 @@ const GalleryCards = ({ cards }) => {
       >
         <FaAngleRight className="text-5xl text-art-pink-400 hover:text-art-purple-300" />
       </button>
+
     </div>
   );
 };
