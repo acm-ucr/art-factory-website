@@ -1,12 +1,12 @@
 import React from "react";
-import Socials from "@/components/Socials";
-import Landing from "@/components/Landing";
-import ProjectTypes from "@/components/ProjectTypes";
-import AboutSection from "@/components/AboutSection";
+import Socials from "@/components/home/Socials";
+import Landing from "@/components/home/Landing";
+import ProjectTypes from "@/components/home/ProjectTypes";
+import AboutSection from "@/components/home/AboutSection";
 
 const Home = () => {
   return (
-    <div className="w-full flex flex-col items-center gap-4">
+    <div className="w-full flex flex-col items-center gap-6">
       <Landing />
       <AboutSection />
       <ProjectTypes />

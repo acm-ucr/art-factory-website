@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectType from "@/components/ProjectType";
+import ProjectType from "@/components/home/ProjectType";
 import paintbrush from "@/public/cards/paintbrush.svg";
 import hand from "@/public/cards/hand.svg";
 import origami from "@/public/cards/origami.svg";
