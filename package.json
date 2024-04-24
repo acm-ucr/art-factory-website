@@ -14,8 +14,10 @@
   },
   "dependencies": {
     "bootstrap": "^3.4.1",
+    "moment": "^2.30.1",
     "next": "^14.0.4",
     "react": "^18.2.0",
+    "react-big-calendar": "^1.11.6",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1"
