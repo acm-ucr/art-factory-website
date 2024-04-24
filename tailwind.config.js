@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         urbanist: "var(--urbanist-font)",
+        nunito: ["Nunito", "sans-serif"],
       },
       colors: {
         art: {

@@ -8,8 +8,8 @@ import Vector from "@/public/cards/Vector.svg";
 
 const Cards = () => {
   return (
-    <div>
-      <div className="flex justify-center flex-wrap w-full">
+    <div className="flex flex-col items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center">
         <ProjectType
           icon={paintbrush}
           title="Painting"
@@ -28,20 +28,20 @@ const Cards = () => {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
           className="bg-art-purple"
         />
-        <div className="w-full flex justify-center">
-          <ProjectType
-            icon={origami}
-            title="DIY"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
-            className="bg-art-purple"
-          />
-          <ProjectType
-            icon={Vector}
-            title="Studio Time"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
-            className="bg-art-purple-100"
-          />
-        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center">
+        <ProjectType
+          icon={origami}
+          title="DIY"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          className="bg-art-purple"
+        />
+        <ProjectType
+          icon={Vector}
+          title="Studio Time"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          className="bg-art-purple-100"
+        />
       </div>
     </div>
   );
