@@ -1,7 +1,7 @@
-import Card from "./Card";
+import Card from "./Board";
 import { Board } from "../../data/board.js";
 
-const Cards = () => {
+const Boards = () => {
   return (
     <div className="w-5/6">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
@@ -18,4 +18,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Boards;
