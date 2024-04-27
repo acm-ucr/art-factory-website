@@ -9,11 +9,13 @@ const CustomToolbar = ({ onNavigate, date }) => {
         }}
         className="hover:cursor-pointer text-saf-brown text-4xl"
       />
-      <p className="m-0 text-transparent bg-clip-text bg-saf-brown text-4xl">
-        {date.toLocaleString("default", { month: "short" })}{" "}
-        {date.getFullYear()}
-      </p>
-
+      <div>
+        <h1 className="text-xl text-black">Calendar</h1>
+        <p className="m-0 text-transparent bg-clip-text bg-black text-4xl">
+          {date.toLocaleString("default", { month: "short" })}{" "}
+          {date.getFullYear()}
+        </p>
+      </div>
       <AiOutlineArrowRight
         onClick={() => onNavigate("NEXT")}
         className="hover:cursor-pointer text-saf-brown text-4xl"

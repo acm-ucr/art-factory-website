@@ -71,7 +71,7 @@ const CalendarEvent = () => {
         initial="hidden"
         whileInView="show"
       > */}
-      <div className="h-[90vh] w-full relative mb-24 ">
+      <div className="h-[90vh] w-10/12 relative mb-24 ">
         <Calendar
           date={date}
           className=" w-full m-0 p-0 text-md md:text-2xl"
