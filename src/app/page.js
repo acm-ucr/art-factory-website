@@ -2,7 +2,7 @@ import React from "react";
 import Socials from "@/components/home/Socials";
 import Landing from "@/components/home/Landing";
 import ProjectTypes from "@/components/home/ProjectTypes";
-import AboutSection from "@/components/home/AboutSection";
+import AboutSection from "@/components/home/What";
 
 const Home = () => {
   return (
