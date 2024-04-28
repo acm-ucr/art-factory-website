@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+
 const Button = ({ text, link }) => {
   return (
     <button className="border-[6.5px] border-art-purple rounded-full md:py-[2px] pt-[1.25px] pb-[2.25px] drop-shadow-[4px_4px_0px_rgba(191,140,225,.70)]">
