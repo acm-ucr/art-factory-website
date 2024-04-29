@@ -11,12 +11,16 @@ const GalleryCards = ({ cards, title }) => {
   const handleLeftClick = () => {
     if (currentCardIndex > 0) {
       setCurrentCardIndex(currentCardIndex - 1);
+    } else {
+      setCurrentCardIndex(cards.length - 3);
     }
   };
 
   const handleRightClick = () => {
     if (currentCardIndex < cards.length - 3) {
       setCurrentCardIndex(currentCardIndex + 1);
+    } else {
+      setCurrentCardIndex(0);
     }
   };
 
