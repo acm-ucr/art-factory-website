@@ -27,17 +27,17 @@ const GalleryCards = ({ cards, title }) => {
   return (
     <div className=" flex justify-center flex-col items-center w-full gap-6 mb-3">
       <GalleryHeader text={title} />
-      <div className="flex w-full justify-center justify-between mt-2">
+      <div className="flex w-full justify-between mt-2">
         <button
           onClick={handleLeftClick}
           className="flex justify-center items-center"
         >
-          <FaAngleLeft className="max-[490px]:text-6xl text-8xl text-art-pink-400 hover:text-art-purple-300" />
+          <FaAngleLeft className="md:text-8xl text-6xl text-art-pink-400 hover:text-art-purple-300" />
         </button>
         <Image
           src={cards[currentCardIndex].image}
           alt="Image"
-          className="max-[490px]:w-60 max-[490px]:h-60 w-80 h-80 rounded-xl flex justify-center items-center bg-art-purple-100"
+          className="md:w-80 md:h-80 w-60 h-60 rounded-xl flex justify-center items-center bg-art-purple-100"
         />
         <Image
           src={cards[currentCardIndex + 1].image}
