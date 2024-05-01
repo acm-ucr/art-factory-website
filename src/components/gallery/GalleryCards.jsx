@@ -53,7 +53,7 @@ const GalleryCards = ({ cards, title }) => {
           onClick={handleRightClick}
           className="flex justify-center items-center"
         >
-          <FaAngleRight className="max-[490px]:text-6xl text-8xl text-art-pink-400 hover:text-art-purple-300" />
+          <FaAngleRight className="md:text-8xl text-6xl text-art-pink-400 hover:text-art-purple-300" />
         </button>
       </div>
     </div>
