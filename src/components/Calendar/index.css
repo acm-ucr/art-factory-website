@@ -3,6 +3,6 @@
 }
 
 .rbc-header + .rbc-header {
-  border-left: 2px solid;
-  border-color: grey;
+  border-left: 4px solid;
+  border-color: black;
 }

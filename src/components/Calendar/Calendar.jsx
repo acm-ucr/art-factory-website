@@ -7,6 +7,7 @@ import CustomToolbar from "./CustomToolbar.jsx";
 import CustomEvent from "./CustomEvents.jsx";
 import CustomHeader from "./CustomHeader.jsx";
 import Modal from "./Modal.jsx";
+import Title from "../Title.jsx";
 // import { motion } from "framer-motion";
 
 const localizer = momentLocalizer(moment);
@@ -63,7 +64,7 @@ const CalendarEvent = () => {
   }, []);
 
   return (
-    <section className="w-full flex justify-center items-center flex-col mt-[2vh] -mb-28 font-lora">
+    <section className="w-full flex justify-center items-center flex-col mt-[2vh] font-lora">
       {/* <motion.div
         className="w-10/12 flex justify-center items-center"
         variants={animation}
@@ -71,10 +72,11 @@ const CalendarEvent = () => {
         initial="hidden"
         whileInView="show"
       > */}
-      <div className="h-[90vh] w-10/12 relative mb-24 ">
+      <Title text={"Calendar"} />
+      <div className="h-[90vh] w-10/12 relative mb-24 rounded-lg">
         <Calendar
           date={date}
-          className=" w-full m-0 p-0 text-md md:text-2xl"
+          className=" w-full m-0 p-0 text-md md:text-2xl rounded-lg"
           allDayAccessor="allDay"
           showAllEvents={true}
           events={events}
