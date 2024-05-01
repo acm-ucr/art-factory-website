@@ -2,7 +2,36 @@
   padding: 0px;
 }
 
-.rbc-header + .rbc-header {
-  border-left: 4px solid;
-  border-color: black;
+.rbc-header {
+  border-top: 4px solid;
+  border-left: transparent;
+  border-bottom: transparent;
+  border-radius: 8px; 
+  padding-top: 12px;
 }
+
+.rbc-day-bg {
+  border: 3px solid purple; 
+  border-bottom: transparent;
+
+}
+
+.rbc-day-bg:first-child{
+  /* Your specific styles here */
+  background-color: red; /* Example style */
+  border-radius: 8px; /* Example style */
+}
+
+.rbc-calendar {
+  border-radius: 12px; /* Keeps the rounded corners */
+  border: 2px solid #151414; /* Adds a solid border with a light gray color */
+  box-shadow: 10px 0 15px -5px rgba(117, 13, 86, 0.1); /* Shadow on the right side only */
+  overflow: hidden; /* Ensures no internal component bleeds over the rounded corners */
+  padding: 30px;
+}
+
+
+
+
+
+
