@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import right from "../../../public/rightring.svg";
-import left from "../../../public/leftring.svg";
+import right from "../../../public/aboutlanding/rightring.svg";
+import left from "../../../public/aboutlanding/leftring.svg";
 import logo from "../../../public/LogoLanding.svg";
 
 const AboutLanding = () => {
