@@ -20,7 +20,7 @@ const Landing = () => {
           art factory
         </div>
 
-        <div className="absolute mt-[16%] md:mt-[18%] flex items-center bg-art-purple-100 rounded-full px-3 w-54 md:w-8/12 h-4 md:h-9 ml-6">
+        <div className="absolute mt-[16%] md:mt-[18%] flex items-center bg-art-purple-100 rounded-full px-3 w-54 md:w-8/12 h-[17px] md:h-10 ml-6">
           <Image
             src={logo}
             alt="landingLogo"
@@ -35,7 +35,7 @@ const Landing = () => {
         <Image
           src={rightcurve}
           alt="rightring"
-          className="absolute right-[2%] md:-right-[8.5%] mt-2 md:mt-4 w-28 md:w-64"
+          className="absolute right-[2%] md:-right-[4%] mt-2 md:mt-3 w-28 md:w-5/12 -rotate-2"
         />
       </div>
     </div>
