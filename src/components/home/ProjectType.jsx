@@ -14,7 +14,7 @@ const ProjectType = ({ icon, title, description, className = " " }) => {
 
       <div className="bg-yellow-200 text-center mt-2 font-bold text-3xl text-white bg-clip-text ">
         {title}
-        <div className="text-lg mt-1 text-white">{description}</div>
+        <div className="text-sm mt-1 text-white">{description}</div>
       </div>
     </div>
   );

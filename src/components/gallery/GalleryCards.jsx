@@ -11,45 +11,49 @@ const GalleryCards = ({ cards, title }) => {
   const handleLeftClick = () => {
     if (currentCardIndex > 0) {
       setCurrentCardIndex(currentCardIndex - 1);
+    } else {
+      setCurrentCardIndex(cards.length - 3);
     }
   };
 
   const handleRightClick = () => {
     if (currentCardIndex < cards.length - 3) {
       setCurrentCardIndex(currentCardIndex + 1);
+    } else {
+      setCurrentCardIndex(0);
     }
   };
 
   return (
     <div className=" flex justify-center flex-col items-center w-full gap-6 mb-3">
       <GalleryHeader text={title} />
-      <div className="flex w-full justify-center gap-10 mt-2">
+      <div className="flex w-full justify-between mt-2">
         <button
           onClick={handleLeftClick}
           className="flex justify-center items-center"
         >
-          <FaAngleLeft className="text-5xl text-art-pink-400 hover:text-art-purple-300" />
+          <FaAngleLeft className="md:text-8xl text-6xl text-art-pink-400 hover:text-art-purple-300" />
         </button>
         <Image
           src={cards[currentCardIndex].image}
           alt="Image"
-          className="w-60 h-60 rounded-xl flex justify-center items-center bg-art-purple-100"
+          className="md:w-80 md:h-80 w-60 h-60 rounded-xl flex justify-center items-center bg-art-purple-100"
         />
         <Image
           src={cards[currentCardIndex + 1].image}
           alt="Image"
-          className="ml-4 w-60 h-60 rounded-xl justify-center items-center bg-art-purple-100 hidden lg:block"
+          className="ml-4 w-80 h-80 rounded-xl justify-center items-center bg-art-purple-100 hidden md:block"
         />
         <Image
           src={cards[currentCardIndex + 2].image}
           alt="Image"
-          className="ml-4 w-60 h-60 rounded-xl justify-center items-center bg-art-purple-100 hidden sm:block"
+          className="ml-4 w-80 h-80 rounded-xl justify-center items-center bg-art-purple-100 hidden lg:block"
         />
         <button
           onClick={handleRightClick}
           className="flex justify-center items-center"
         >
-          <FaAngleRight className="text-5xl text-art-pink-400 hover:text-art-purple-300" />
+          <FaAngleRight className="md:text-8xl text-6xl text-art-pink-400 hover:text-art-purple-300" />
         </button>
       </div>
     </div>

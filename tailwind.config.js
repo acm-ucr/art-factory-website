@@ -30,6 +30,9 @@ module.exports = {
           gray: "#CBD8E8",
         },
       },
+      fontFamily: {
+        lora: ["var(--font-lora)"],
+      },
     },
   },
   plugins: [],
