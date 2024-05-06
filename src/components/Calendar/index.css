@@ -3,8 +3,7 @@
 }
 
 .rbc-header {
- border: transparent;
- 
+  border: transparent;
 }
 
 .rbc-day-bg {
@@ -12,7 +11,6 @@
   border-bottom: transparent;
   background-color: white !important;
 }
-
 
 .rbc-calendar {
   border-radius: 12px; /* Keeps the rounded corners */
@@ -24,4 +22,3 @@
   padding-top: 1px;
   background-color: plum;
 }
-
