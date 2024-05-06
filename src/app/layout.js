@@ -3,6 +3,13 @@ import Navigation from "@/components/Navigation";
 import "./globals.css";
 import { Nunito } from "next/font/google";
 import Footer from "@/components/Footer";
+import { Lora } from "next/font/google";
+
+const lora = Lora({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-lora",
+});
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -12,14 +19,16 @@ const nunito = Nunito({
 });
 
 export const metadata = {
-  title: "Art Factory ",
+  title: "Art Factory",
   description: "Art Factory Website",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${nunito.variable}`}>
-      <body className="bg-white text-black w-screen overflow-x-hidden font-nunito">
+      <body
+        className={`${lora.variable} bg-white  text-black w-screen overflow-x-hidden font-nunito`}
+      >
         <Navigation />
         {children}
         <Footer />
