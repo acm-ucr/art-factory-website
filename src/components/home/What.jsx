@@ -32,13 +32,12 @@ const What = () => {
         whileInView="end"
         transition={{ delay: 0.4 }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        ArtFactory at UCR is a vibrant community of artists established in
+        spring 2023. Our mission? To cultivate creativity and exploration across
+        various art forms. <br />
+        We believe that everyone, regardless of experience, should have a space
+        to express themselves artistically. Whether you&apos;re a seasoned artist or
+        just starting out, you&apos;re welcome here!
       </motion.p>
       <motion.p
         variants={animate}
@@ -63,13 +62,10 @@ const What = () => {
         whileInView="end"
         transition={{ delay: 0.9 }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        Here at ArtFactory, we use our time to explore different artistic
+        mediums. We come together as a community to explore different artistic
+        mediums. It doesn&apos;t matter how artistic (or unartistic) you are. Simply
+        express yourself!
       </motion.p>
     </motion.div>
   );
