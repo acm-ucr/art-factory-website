@@ -38,7 +38,7 @@ const Navigation = () => {
             key={index}
             href={item.link}
             pathname={item.name}
-            className="text-white hover:cursor-pointer hover:text-art-purple"
+            className="text-white hover:cursor-pointer hover:text-art-purple-200"
             onClick={() => setSelected(item.name)}
           >
             {item.name}
@@ -46,7 +46,7 @@ const Navigation = () => {
               <div
                 className={
                   selected === item.name
-                    ? "bg-art-purple p-1 rounded-full"
+                    ? "bg-art-purple-200 p-1 rounded-full"
                     : "p-1"
                 }
               ></div>
@@ -57,7 +57,7 @@ const Navigation = () => {
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
           as={Link}
           target="_blank"
-          className="bg-art-purple rounded-full w-fit px-6 py-1 flex justify-center text-white"
+          className="bg-art-purple-200 rounded-full w-fit px-6 py-1 flex justify-center text-white"
         >
           JOIN
         </Nav.Link>

@@ -16,7 +16,7 @@ const Cards = () => {
           title="Painting"
           description="At ArtFactory, we incorporate the classic practice of painting into most of our events, 
                       providing therapeutic experience for most art enjoyers."
-          className="bg-art-purple"
+          className="bg-art-purple-200"
         />
         <ProjectType
           icon={pencil}
@@ -30,7 +30,7 @@ const Cards = () => {
           title="Crafting"
           description="Crafting activities are exciting ways to incorporate creativity with practicality. 
                       Our club offers fun and interactive crafting events with supply included."
-          className="bg-art-purple"
+          className="bg-art-purple-200"
         />
       </div>
 
@@ -40,7 +40,7 @@ const Cards = () => {
           title="DIY"
           description="DIY provides the manufacturing experience of our daily objects. With these activities, 
                       members can have a sentimental connection with modern availability and appreciation for their craftsmanship."
-          className="bg-art-purple"
+          className="bg-art-purple-200"
         />
         <ProjectType
           icon={Vector}
