@@ -36,8 +36,8 @@ const What = () => {
         spring 2023. Our mission? To cultivate creativity and exploration across
         various art forms. <br />
         We believe that everyone, regardless of experience, should have a space
-        to express themselves artistically. Whether you&apos;re a seasoned artist or
-        just starting out, you&apos;re welcome here!
+        to express themselves artistically. Whether you&apos;re a seasoned
+        artist or just starting out, you&apos;re welcome here!
       </motion.p>
       <motion.p
         variants={animate}
@@ -64,8 +64,8 @@ const What = () => {
       >
         Here at ArtFactory, we use our time to explore different artistic
         mediums. We come together as a community to explore different artistic
-        mediums. It doesn&apos;t matter how artistic (or unartistic) you are. Simply
-        express yourself!
+        mediums. It doesn&apos;t matter how artistic (or unartistic) you are.
+        Simply express yourself!
       </motion.p>
     </motion.div>
   );
