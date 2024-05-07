@@ -2,7 +2,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const CustomToolbar = ({ onNavigate, date }) => {
   return (
-    <div className="flex justify-center w-full flex-col md:flex-row pt-8">
+    <div className="flex justify-center items-center flex-col md:flex-row py-3 bg-white w-1/4 m-auto border-double border-8 border-p rounded-full border-art-purple text-art-purple">
       <IoIosArrowBack
         onClick={() => {
           onNavigate("PREV");
@@ -10,7 +10,7 @@ const CustomToolbar = ({ onNavigate, date }) => {
         className="hover:cursor-pointer text-4xl"
       />
       <div>
-        <p className="m-0 text-transparent bg-clip-text bg-black text-4xl">
+        <p className="m-0  text-4xl font-nunito">
           {date.toLocaleString("default", { month: "short" })}{" "}
           {date.getFullYear()}
         </p>
