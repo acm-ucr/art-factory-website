@@ -9,7 +9,7 @@ import Vector from "@/public/cards/Vector.svg";
 
 const Cards = () => {
   return (
-    <div className="flex flex-col items-center justify-center hover:-translate-y-6">
+    <div className="flex flex-col items-center justify-center">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center">
         <ProjectType
           icon={paintbrush}
@@ -39,7 +39,7 @@ const Cards = () => {
           icon={origami}
           title="DIY"
           description="DIY provides the manufacturing experience of our daily objects. With these activities, 
-                      members can have a sentimental connection with modern availability and appreciation for their craftsmanship."
+                      members can have a sentimental connection with modern availability and appreciation for craftsmanship."
           className="bg-art-purple"
         />
         <ProjectType
