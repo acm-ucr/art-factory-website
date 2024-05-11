@@ -1,9 +1,13 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const ProjectType = ({ icon, title, description, className = " " }) => {
   return (
-    <div
+    <motion.div
+      whileHover={{ rotateY: 360, scale: 1.125, backgroundColor: "#E893C5" }}
+      transition={{ duration: 1 }}
       className={`m-4 p-4 w-80 h-80 rounded-xl shadow-md flex flex-col justify-start items-center gap-2 ${className} transform transition duration-100 hover:-translate-y-2`}
     >
       <Image
@@ -16,7 +20,7 @@ const ProjectType = ({ icon, title, description, className = " " }) => {
         {title}
         <div className="text-base mt-1 text-white">{description}</div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
