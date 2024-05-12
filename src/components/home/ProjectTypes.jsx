@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 const animate = {
   start: {
     opacity: 0,
-    y: 30,
+    y: 50,
   },
   end: {
     opacity: 1,
@@ -27,7 +27,7 @@ const Cards = () => {
         variants={animate}
         initial="start"
         whileInView="end"
-        transition={{ type: "spring", stiffness: 300, delay: 0.4 }}
+        transition={{ type: "spring", stiffness: 500, delay: 0.4 }}
         className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center"
       >
         <ProjectType
@@ -57,7 +57,7 @@ const Cards = () => {
         variants={animate}
         initial="start"
         whileInView="end"
-        transition={{ type: "spring", stiffness: 300, delay: 0.6 }}
+        transition={{ type: "spring", stiffness: 500, delay: 0.6 }}
         className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center"
       >
         <ProjectType
@@ -81,7 +81,7 @@ const Cards = () => {
         variants={animate}
         initial="start"
         whileInView="end"
-        transition={{ type: "spring", stiffness: 300, delay: 0.8 }}
+        transition={{ type: "spring", stiffness: 500, delay: 0.8 }}
       >
         <motion.p whileHover={{ scale: 1.125 }}>
           <Button text="View Past Projects" link="/gallery" />
