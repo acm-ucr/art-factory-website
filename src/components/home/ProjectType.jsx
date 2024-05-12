@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const ProjectType = ({ icon, title, description, className = " " }) => {
   return (
     <motion.div
-      whileHover={{ rotateY: 360, scale: 1.125, backgroundColor: "#E893C5" }}
+      whileHover={{ rotateY: 360, scale: 1.125 }}
       transition={{ duration: 1 }}
       className={`m-4 p-4 w-80 h-80 rounded-xl shadow-md flex flex-col justify-start items-center gap-2 ${className} transform transition duration-100 hover:-translate-y-2`}
     >

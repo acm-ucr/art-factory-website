@@ -77,15 +77,16 @@ const Cards = () => {
       </motion.div>
 
       <br></br>
-      <motion.p
+      <motion.div
         variants={animate}
         initial="start"
         whileInView="end"
         transition={{ type: "spring", stiffness: 300, delay: 0.8 }}
-        whileHover={{ scale: 1.125 }}
       >
-        <Button text="View Past Projects" link="/gallery" />
-      </motion.p>
+        <motion.p whileHover={{ scale: 1.125 }}>
+          <Button text="View Past Projects" link="/gallery" />
+        </motion.p>
+      </motion.div>
     </div>
   );
 };
