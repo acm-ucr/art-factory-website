@@ -83,7 +83,12 @@ const Cards = () => {
         whileInView="end"
         transition={{ type: "spring", stiffness: 500, delay: 0.8 }}
       >
-        <motion.p whileHover={{ scale: 1.125 }}>
+        <motion.p
+          whileHover={{
+            scale: 1.125,
+            transition: { type: "spring", stiffness: 600 },
+          }}
+        >
           <Button text="View Past Projects" link="/gallery" />
         </motion.p>
       </motion.div>
