@@ -10,7 +10,7 @@ const CustomToolbar = ({ onNavigate, date }) => {
         className="hover:cursor-pointer text-4xl"
       />
       <div>
-        <p className="m-0  text-4xl font-nunito">
+        <p className="m-0  text-4xl font-nunito font-semibold">
           {date.toLocaleString("default", { month: "short" })}{" "}
           {date.getFullYear()}
         </p>

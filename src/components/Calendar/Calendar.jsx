@@ -64,7 +64,7 @@ const CalendarEvent = () => {
   }, []);
 
   return (
-    <section className="w-full flex justify-center items-center flex-col mt-[2vh] font-lora">
+    <section className="w-full flex justify-center items-center flex-col mt-[5vh] font-nunito">
       {/* <motion.div
         className="w-10/12 flex justify-center items-center"
         variants={animation}
@@ -73,7 +73,7 @@ const CalendarEvent = () => {
         whileInView="show"
       > */}
       <Title text={"Calendar"} />
-      <div className="h-[90vh] w-10/12 relative mb-24rounded-xl mt-7 mb-56 bg-art-pink-400 border-art-purple rounded shadow-[10px_10px_10px_0px] shadow-art-purple-500 ">
+      <div className="h-[90vh] w-10/12 relative mb-24rounded-xl mt-10 mb-56 bg-art-pink-400 border-art-purple rounded shadow-[10px_10px_10px_0px] shadow-art-purple-500 font-">
         <Calendar
           date={date}
           className="w-full m-0 p-0 text-md md:text-2xl"
