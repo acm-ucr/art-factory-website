@@ -14,11 +14,11 @@
   },
   "dependencies": {
     "bootstrap": "^3.4.1",
-    "framer-motion": "^11.1.7",
+    "framer-motion": "^11.1.9",
     "next": "^14.0.4",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
-    "react-dom": "^18.2.0",
+    "react-dom": "^18.3.1",
     "react-icons": "^4.10.1"
   },
   "devDependencies": {
