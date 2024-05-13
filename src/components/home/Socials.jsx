@@ -5,9 +5,9 @@ import Title from "../Title";
 const Socials = () => {
   return (
     <div className="w-5/6">
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center justify-center">
         <Title text="Get Involved" />
-        <div className="gap-x-24 mx-auto flex justify-between ">
+        <div className=" gap-2 sm:gap-16 md:gap-24 lg:gap-32 mx-auto flex justify-between ">
           {socials.map((social, index) => (
             <div
               key={index}
