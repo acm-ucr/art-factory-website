@@ -73,10 +73,10 @@ const CalendarEvent = () => {
         whileInView="show"
       > */}
       <Title text={"Calendar"} />
-      <div className="h-[90vh] w-10/12 relative mb-24rounded-xl mt-7 mb-56 bg-art-pink-400 border-art-purple shadow-2xl shadow-art-purple-100 ">
+      <div className="h-[90vh] w-10/12 relative mb-24rounded-xl mt-7 mb-56 bg-art-pink-400 border-art-purple rounded shadow-[10px_10px_10px_0px] shadow-art-purple-500 ">
         <Calendar
           date={date}
-          className=" w-full m-0 p-0 text-md md:text-2xl"
+          className="w-full m-0 p-0 text-md md:text-2xl"
           allDayAccessor="allDay"
           showAllEvents={true}
           events={events}

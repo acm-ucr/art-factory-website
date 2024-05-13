@@ -20,6 +20,6 @@
   overflow: hidden; /* Ensures no internal component bleeds over the rounded corners */
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 1px;
-  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }

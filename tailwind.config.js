@@ -27,6 +27,7 @@ module.exports = {
           "purple-200": "#C28DDF",
           "purple-300": "#debfeb",
           "purple-400": "#cda4e5",
+          "purple-500": "#865F9D",
           gray: "#CBD8E8",
         },
       },
