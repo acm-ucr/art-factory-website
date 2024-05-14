@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="w-full flex flex-col items-center">
       <Title text="Who We Are" />
-      <p className="text-lg my-8 mx-72 text-center">
+      <p className="text-lg my-8 mx-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-80 text-center">
         {" "}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget
@@ -17,7 +17,7 @@ const About = () => {
         bibendum. Neque viverra justo nec ultrices.{" "}
       </p>
       <Title text="What We Do" />
-      <p className="text-lg my-8 mx-72 text-center">
+      <p className="text-lg my-8 mx-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-80 text-center">
         {" "}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget
@@ -30,7 +30,7 @@ const About = () => {
       </p>
 
       <Title text="Why Join Art Factory" />
-      <p className="text-lg my-8 mx-72 text-center">
+      <p className="text-lg my-8 mx-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-80 text-center">
         {" "}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget
