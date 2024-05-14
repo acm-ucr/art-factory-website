@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "@/components/Button.jsx";
 import ProjectType from "@/components/home/ProjectType";
 import paintbrush from "@/public/cards/paintbrush.svg";
 import hand from "@/public/cards/hand.svg";
@@ -13,36 +14,46 @@ const Cards = () => {
         <ProjectType
           icon={paintbrush}
           title="Painting"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          description="At ArtFactory, we incorporate the classic practice of painting into most of our events, 
+                      providing therapeutic experience for most art enjoyers."
           className="bg-art-purple"
         />
         <ProjectType
           icon={pencil}
           title="Sketching"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          description="Sketching plays a crucial role in most craft activities. With ArtFactory, 
+                      members will get to practice with the foundational step of creativity."
           className="bg-art-purple-100"
         />
         <ProjectType
           icon={hand}
           title="Crafting"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          description="Crafting activities are exciting ways to incorporate creativity with practicality. 
+                      Our club offers fun and interactive crafting events with supply included."
           className="bg-art-purple"
         />
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center">
         <ProjectType
           icon={origami}
           title="DIY"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          description="DIY provides the manufacturing experience of our daily objects. With these activities, 
+                      members can have a sentimental connection with modern availability and appreciation for craftsmanship."
           className="bg-art-purple"
         />
         <ProjectType
           icon={Vector}
           title="Studio Time"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          description="Studio Art majors can take advantage of our studio time for their own projects, 
+                    while other members get hands-on comprehensive art experience to their fullest potential!"
           className="bg-art-purple-100"
         />
       </div>
+
+      <br></br>
+
+      <Button text="View Past Projects" link="/gallery" />
     </div>
   );
 };
