@@ -10,7 +10,7 @@ import Vector from "@/public/cards/Vector.svg";
 const Cards = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
         <ProjectType
           icon={paintbrush}
           title="Painting"
@@ -34,7 +34,7 @@ const Cards = () => {
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 justify-center">
         <ProjectType
           icon={origami}
           title="DIY"
