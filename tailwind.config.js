@@ -20,7 +20,6 @@ module.exports = {
           "purple-100": "#5F60D1",
           "purple-200": "#C28DDF",
           "purple-300": "#DEBFEB",
-          // mimimimi
         },
       },
       fontFamily: {
