@@ -16,6 +16,8 @@ module.exports = {
         art: {
           "blue-100": "#1E0F75",
           "pink-100": "#E893C5",
+          "pink-200": "#C09EE5",
+          "pink-300": "#D493D5",
           "pink-400": "#EAD5F1",
           "purple-100": "#5F60D1",
           "purple-200": "#C28DDF",

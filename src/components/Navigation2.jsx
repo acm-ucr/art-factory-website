@@ -11,7 +11,7 @@ const Navigation2 = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="px-8 sticky py-3 top-0 z-30 bg-art-blue-100 w-screen flex justify-between items-center text-xl md:text-xl 2xl:text-2xl">
+    <div className="px-8 sticky py-3 top-0 z-30 bg-art-purple-100 w-screen flex justify-between items-center text-xl md:text-xl 2xl:text-2xl">
       <Link
         onClick={() => {
           setSelected("");
@@ -22,32 +22,28 @@ const Navigation2 = () => {
         <Image
           src={Logo}
           alt="Logo"
-          className="left-0 w-12 md:w-16 hover:opacity-60 duration-300"
+          className="left-0 w-12 md:w-16 hover:opacity-60 duration-300 font-semibold"
         />
         Art Factory
       </Link>
-      <div className="hidden absolute right-0 md:flex justify-between w-2/5">
+      <div className="hidden absolute right-0 md:flex justify-between w-2/5 pr-20 ">
         {items.map((item, index) => (
           <Link
             href={item.link}
             key={index}
             onClick={() => {
               setSelected(item.name);
+              handleNav();
             }}
-            className={`text-white hover:cursor-pointer hover:text-art-purple duration-300 font-semibold ${
-              selected === item.name ? "p-0" : "text-black"
+            className={`hover:text-pink-300 duration-300 border-solid font-semibold py-2 ${
+              selected === item.name
+                ? "border-b-2 border-swim-yellow text-swim-blue-300"
+                : item.name === "JOIN"
+                ? "bg-art-pink-200 rounded-full w-fit px-12 flex justify-center text-white" // Add specific styling for 'join'
+                : "text-white"
             }`}
           >
             {item.name}
-            <div className="flex justify-center">
-              <div
-                className={
-                  selected === item.name
-                    ? "bg-art-purple p-1 rounded-full"
-                    : "p-1"
-                }
-              />
-            </div>
           </Link>
         ))}
       </div>
@@ -79,7 +75,7 @@ const Navigation2 = () => {
         ))}
       </div>
       <div onClick={() => setNav(!nav)}>
-        <FaBars className="text-3xl flex md:hidden text-black hover:cursor-pointer hover:text-swim-blue-300 justify-self-end" />
+        <FaBars className="text-3xl flex md:hidden text-white hover:cursor-pointer hover:text-swim-blue-300 justify-self-end" />
       </div>
     </div>
   );

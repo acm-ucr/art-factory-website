@@ -16,7 +16,7 @@ const Navigation = () => {
       collapseOnSelect
       expand="lg"
       fixed="top"
-      className="font-montserrat w-full px-3 min-h-[9vh] bg-art-blue-100 drop-shadow-lg flex justify-between items-center"
+      className="font-montserrat w-full px-3 min-h-[9vh] bg-red-500 drop-shadow-lg flex items-center"
     >
       <Navbar.Brand className="p-0">
         <Link
@@ -26,7 +26,7 @@ const Navigation = () => {
           onClick={() => setSelected("")}
         >
           <Image src={Logo} className="h-[7vh] w-[7vh]" alt="Art Factory" />
-          <div className="text-white text-3xl md:text-5xl font-montserrat font-bold md:bg-red-500">
+          <div className="text-white text-3xl md:text-5xl font-nunito font-bold md:bg-red-500">
             Art Factory
           </div>
         </Link>
@@ -38,7 +38,7 @@ const Navigation = () => {
         <FaBars className=" text-saf-beige-100 text-xl" />
       </Navbar.Toggle>
       <Navbar.Collapse id="navbar-nav mx-4">
-        <Nav className="w-full md:w-6/12 no-underline text-3xl gap-4 font-semibold bg-red-500 flex items-end justify-end">
+        <Nav className="w-full md:w-6/12 no-underline text-3xl font-semibold font-nunito bg-red-500 flex items-end justify-end">
           {items.map((item, index) => (
             <Nav.Link
               as={Link}
