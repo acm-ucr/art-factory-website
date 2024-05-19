@@ -37,9 +37,9 @@ const Navigation2 = () => {
             }}
             className={`hover:text-pink-300 duration-300 border-solid font-semibold py-2 ${
               selected === item.name
-                ? "border-b-2 border-swim-yellow text-swim-blue-300"
+                ? ""
                 : item.name === "JOIN"
-                ? "bg-art-pink-200 rounded-full w-fit px-12 flex justify-center text-white" // Add specific styling for 'join'
+                ? "bg-art-pink-200 rounded-full w-fit px-12 flex justify-center text-white"
                 : "text-white"
             }`}
           >
