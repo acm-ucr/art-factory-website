@@ -1,11 +1,11 @@
 .rbc-header {
   padding: 0px;
-  border: transparent;
+  border-bottom: black 3px solid;
 }
 
 .rbc-day-bg {
   border: 3px solid #865f9d;
-  border-bottom: transparent;
+  border-top: transparent;
   background-color: white !important;
 }
 
