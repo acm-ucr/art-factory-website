@@ -1,9 +1,9 @@
 import { AiOutlinePlus } from "react-icons/ai";
-// import reactHtmlParser from "html-react-parser";
+import reactHtmlParser from "html-react-parser";
 
 const Modal = ({ event, setEvent }) => {
   return (
-    <div className="font-playfair fixed top-[56%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[75vw] md:w-[50vw] bg-saf-red z-10 drop-shadow-lg">
+    <div className="font-playfair fixed top-[56%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[75vw] md:w-[50vw] bg-art-purple-200 z-10 drop-shadow-lg">
       <div className={`flex justify-between items-center ${event.color}`}>
         <p
           className={
