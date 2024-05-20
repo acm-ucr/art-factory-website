@@ -36,7 +36,7 @@ const Landing = () => {
           variants={ringanimations}
           initial="start"
           whileInView="end"
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.3 }}
         >
           <Image
             src={leftcurve}
