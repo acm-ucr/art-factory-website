@@ -32,7 +32,7 @@ const Cards = () => {
       >
         <motion.div
           whileHover={{
-            scale: 1.1,
+            scale: 1.05,
             transition: { type: "spring", stiffness: 250 },
           }}
         >
@@ -46,7 +46,7 @@ const Cards = () => {
         </motion.div>
         <motion.div
           whileHover={{
-            scale: 1.1,
+            scale: 1.05,
             transition: { type: "spring", stiffness: 250 },
           }}
         >
@@ -60,7 +60,7 @@ const Cards = () => {
         </motion.div>
         <motion.div
           whileHover={{
-            scale: 1.1,
+            scale: 1.05,
             transition: { type: "spring", stiffness: 250 },
           }}
         >
@@ -82,7 +82,7 @@ const Cards = () => {
       >
         <motion.div
           whileHover={{
-            scale: 1.1,
+            scale: 1.05,
             transition: { type: "spring", stiffness: 250 },
           }}
         >
@@ -96,7 +96,7 @@ const Cards = () => {
         </motion.div>
         <motion.div
           whileHover={{
-            scale: 1.1,
+            scale: 1.05,
             transition: { type: "spring", stiffness: 250 },
           }}
         >
@@ -110,7 +110,6 @@ const Cards = () => {
         </motion.div>
       </motion.div>
 
-      <br></br>
       <motion.div
         variants={animate}
         initial="start"
@@ -119,9 +118,10 @@ const Cards = () => {
       >
         <motion.p
           whileHover={{
-            scale: 1.1,
+            scale: 1.05,
             transition: { type: "spring", stiffness: 250 },
           }}
+          className="mt-6"
         >
           <Button text="View Past Projects" link="/gallery" />
         </motion.p>
