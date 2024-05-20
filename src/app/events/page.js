@@ -1,9 +1,9 @@
 import React from "react";
-
+import Calendar from "@/components/Calendar/Calendar";
 const page = () => {
   return (
-    <div className="w-full flex flex-col items-center">
-      <p>home page</p>
+    <div>
+      <Calendar />
     </div>
   );
 };

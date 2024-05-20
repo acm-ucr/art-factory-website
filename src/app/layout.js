@@ -12,14 +12,16 @@ const nunito = Nunito({
 });
 
 export const metadata = {
-  title: "Art Factory ",
+  title: "Art Factory",
   description: "Art Factory Website",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${nunito.variable}`}>
-      <body className="bg-white text-black w-screen overflow-x-hidden font-nunito">
+      <body
+        className={`${nunito.variable} bg-white text-black w-screen overflow-x-hidden font-nunito space-y-6`}
+      >
         <Navigation />
         {children}
         <Footer />
