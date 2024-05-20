@@ -15,4 +15,8 @@ export const items = [
     name: "gallery",
     link: "gallery",
   },
+  {
+    name: "JOIN",
+    link: "JOIN",
+  },
 ];
