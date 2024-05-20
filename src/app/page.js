@@ -1,5 +1,5 @@
 import React from "react";
-// import Socials from "@/components/home/Socials";
+import Socials from "@/components/home/Socials";
 import Landing from "@/components/home/Landing";
 import ProjectTypes from "@/components/home/ProjectTypes";
 import What from "@/components/home/What";
@@ -10,7 +10,7 @@ const Home = () => {
       <Landing />
       <What />
       <ProjectTypes />
-      {/* <Socials /> */}
+      <Socials />
     </div>
   );
 };

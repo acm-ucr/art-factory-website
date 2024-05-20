@@ -1,76 +1,83 @@
 "use client";
-import React, { useState } from "react";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../public/icon.svg";
+import Link from "next/link";
+import { useState } from "react";
+import Logo from "@/public/icon.svg";
 import { items } from "@/data/navigation";
 import { FaBars } from "react-icons/fa";
 
 const Navigation = () => {
   const [selected, setSelected] = useState("");
+  const [nav, setNav] = useState(false);
 
   return (
-    <Navbar
-      collapseOnSelect
-      expand="lg"
-      fixed="top"
-      className="font-montserrat w-full px-3 min-h-[9vh] bg-red-500 drop-shadow-lg flex items-center"
-    >
-      <Navbar.Brand className="p-0">
-        <Link
-          eventkey="1"
-          className="p-0 flex items-center"
-          href="/"
-          onClick={() => setSelected("")}
-        >
-          <Image src={Logo} className="h-[7vh] w-[7vh]" alt="Art Factory" />
-          <div className="text-white text-3xl md:text-5xl font-nunito font-bold md:bg-red-500">
-            Art Factory
-          </div>
-        </Link>
-      </Navbar.Brand>
-      <Navbar.Toggle
-        className="list-unstyled !text-transparent border-0"
-        aria-controls="basic-navbar-nav"
+    <div className="px-2 md:px-8 sticky py-3 top-0 z-30 bg-art-purple-100 w-screen flex justify-between items-center text-xl md:text-xl 2xl:text-2xl">
+      <Link
+        onClick={() => {
+          setSelected("");
+        }}
+        href="/"
+        className="flex gap-2 text-white items-center"
       >
-        <FaBars className=" text-saf-beige-100 text-xl" />
-      </Navbar.Toggle>
-      <Navbar.Collapse id="navbar-nav mx-4">
-        <Nav className="w-full md:w-6/12 no-underline text-3xl font-semibold font-nunito bg-red-500 flex items-end justify-end">
-          {items.map((item, index) => (
-            <Nav.Link
-              as={Link}
-              key={index}
-              href={item.link}
-              pathname={item.name}
-              className="text-white hover:cursor-pointer hover:text-art-purple bg-green-500"
-              onClick={() => setSelected(item.name)}
-            >
-              {item.name}
-              <div className="flex justify-center">
-                <div
-                  className={
-                    selected === item.name
-                      ? "bg-art-purple p-1 rounded-full"
-                      : "p-1"
-                  }
-                ></div>
-              </div>
-            </Nav.Link>
-          ))}
-          <Nav.Link
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-            as={Link}
-            target="_blank"
-            className="bg-art-purple rounded-full w-fit px-6 py-1 flex justify-center text-white"
+        <Image
+          src={Logo}
+          alt="Logo"
+          className="left-0 w-12 md:w-16 hover:opacity-60 duration-300 font-semibold"
+        />
+        Art Factory
+      </Link>
+      <div className="hidden absolute right-0 md:flex justify-between w-2/5 pr-20 ">
+        {items.map((item, index) => (
+          <Link
+            href={item.link}
+            key={index}
+            onClick={() => {
+              setSelected(item.name);
+              handleNav();
+            }}
+            className={`hover:text-pink-300 duration-300 border-solid font-semibold py-2 ${
+              selected === item.name
+                ? ""
+                : item.name === "JOIN"
+                ? "bg-art-pink-200 rounded-full w-fit px-12 flex justify-center text-white"
+                : "text-white"
+            }`}
           >
-            JOIN
-          </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+            {item.name}
+          </Link>
+        ))}
+      </div>
+      {/* mobile menu */}
+
+      <div
+        className={`fixed ${
+          nav
+            ? "transition transform ease-out duration-500 translate-y-[68px] opacity-100"
+            : "hidden transition duration-500 ease-in transform -translate-y-24 opacity-0"
+        } md:hidden flex flex-col items-center justify-evenly w-full duration-500 bg-white top-0 left-0 right-0 -z-10`}
+      >
+        {items.map((item, index) => (
+          <Link
+            href={item.link}
+            key={index}
+            onClick={() => {
+              setSelected(item.name);
+              handleNav();
+            }}
+            className={`hover:text-swim-blue-300 duration-300 border-solid font-semibold py-2 ${
+              selected === item.name
+                ? "border-b-2 border-swim-yellow text-swim-blue-300"
+                : "text-black"
+            }`}
+          >
+            {item.name}
+          </Link>
+        ))}
+      </div>
+      <div onClick={() => setNav(!nav)}>
+        <FaBars className="text-3xl flex md:hidden text-white hover:cursor-pointer hover:text-swim-blue-300 justify-self-end" />
+      </div>
+    </div>
   );
 };
 
