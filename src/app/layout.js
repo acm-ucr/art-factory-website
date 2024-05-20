@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${nunito.variable}`}>
       <body
-        className={`${nunito.variable} bg-white  text-black w-screen overflow-x-hidden font-nunito`}
+        className={`${nunito.variable} bg-white text-black w-screen overflow-x-hidden font-nunito space-y-6`}
       >
         <Navigation />
         {children}
