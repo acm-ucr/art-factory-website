@@ -6,7 +6,7 @@ import What from "@/components/home/What";
 
 const Home = () => {
   return (
-    <div className="w-full flex flex-col items-center gap-6">
+    <div className="w-full flex flex-col items-center gap-8">
       <Landing />
       <What />
       <ProjectTypes />
