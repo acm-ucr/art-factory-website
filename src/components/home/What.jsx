@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const animate = {
   start: {
     opacity: 0,
-    y: 30,
+    y: 40,
   },
   end: {
     opacity: 1,
@@ -43,7 +43,7 @@ const What = () => {
         variants={animate}
         initial="start"
         whileInView="end"
-        transition={{ delay: 0.50 }}
+        transition={{ delay: 0.5 }}
       >
         <Button text="LEARN MORE" link="/about" />
       </motion.p>
@@ -51,7 +51,7 @@ const What = () => {
         variants={animate}
         initial="start"
         whileInView="end"
-        transition={{ delay: 0.60 }}
+        transition={{ delay: 0.6 }}
       >
         <Title text="What We Do" />
       </motion.div>
