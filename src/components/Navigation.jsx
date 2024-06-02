@@ -89,7 +89,11 @@ const Navigation = () => {
         ))}
       </div>
       <div onClick={handleNav}>
-        <FaBars className="text-3xl flex md:hidden text-white hover:cursor-pointer hover:text-swim-blue-300 justify-self-end" />
+        <FaBars
+          className={`text-3xl flex md:hidden ${
+            nav ? "text-art-pink-100" : "text-white"
+          } hover:cursor-pointer hover:text-art-pink-100 justify-self-end`}
+        />
       </div>
     </div>
   );
