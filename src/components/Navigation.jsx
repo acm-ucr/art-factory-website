@@ -10,8 +10,12 @@ const Navigation = () => {
   const [selected, setSelected] = useState("");
   const [nav, setNav] = useState(false);
 
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
   return (
-    <div className="px-2 md:px-8 sticky py-3 top-0 z-30 bg-art-purple-100 w-screen flex justify-between items-center text-xl md:text-xl 2xl:text-2xl">
+    <div className="px-2 md:px-8 sticky py-3 top-0 z-30 bg-art-purple-100 w-screen flex justify-between items-center text-xl sm:text-xl md:text-xl lg:text-2xl">
       <Link
         onClick={() => {
           setSelected("");
@@ -26,7 +30,9 @@ const Navigation = () => {
         />
         Art Factory
       </Link>
-      <div className="hidden absolute right-0 md:flex justify-between w-2/5 pr-20 ">
+      <div className="hidden md:flex justify-end w-full pr-10 gap-4 space-x-2">
+        {" "}
+        {/* Add space-x-2 class */}
         {items.map((item, index) => (
           <Link
             href={item.link}
@@ -35,11 +41,12 @@ const Navigation = () => {
               setSelected(item.name);
               handleNav();
             }}
-            className={`hover:text-pink-300 duration-300 border-solid font-semibold py-2 ${
+            className={`hover:text-pink-300 duration-300 border-solid font-semibold py-2 mx-2 ${
+              /* Add mx-2 class */
               selected === item.name
                 ? ""
                 : item.name === "JOIN"
-                ? "bg-art-pink-200 rounded-full w-fit px-12 flex justify-center text-white"
+                ? "bg-gradient-to-r from-art-pink-200 to-art-purple-200 rounded-full px-12 text-white"
                 : "text-white"
             }`}
           >
@@ -74,7 +81,7 @@ const Navigation = () => {
           </Link>
         ))}
       </div>
-      <div onClick={() => setNav(!nav)}>
+      <div onClick={handleNav}>
         <FaBars className="text-3xl flex md:hidden text-white hover:cursor-pointer hover:text-swim-blue-300 justify-self-end" />
       </div>
     </div>
