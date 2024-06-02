@@ -1,0 +1,25 @@
+.rbc-header {
+  padding: 0px;
+  border-bottom: #c08ce1 3px solid;
+}
+
+.rbc-day-bg {
+  border: 3px solid #c08ce1;
+  border-top: transparent;
+  background-color: white !important;
+}
+
+/* .rbc-day-bg:first-child  {
+  border-top-left-radius: 12px;
+} */
+
+.rbc-calendar {
+  border-radius: 12px; /* Keeps the rounded corners */
+  border: 5px solid #c08ce1; /* Adds a solid border with a light gray color */
+  box-shadow: 10px 0 15px -5px rgba(117, 13, 86, 0.1); /* Shadow on the right side only */
+  overflow: hidden; /* Ensures no internal component bleeds over the rounded corners */
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}

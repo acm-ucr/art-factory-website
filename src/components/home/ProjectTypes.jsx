@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Button from "@/components/Button.jsx";
 import ProjectType from "@/components/home/ProjectType";
@@ -6,6 +7,18 @@ import hand from "@/public/cards/hand.svg";
 import origami from "@/public/cards/origami.svg";
 import pencil from "@/public/cards/pencil.svg";
 import Vector from "@/public/cards/Vector.svg";
+import { motion } from "framer-motion";
+
+const animate = {
+  start: {
+    opacity: 0,
+    y: 50,
+  },
+  end: {
+    opacity: 1,
+    y: 0,
+  },
+};
 
 const Cards = () => {
   return (
@@ -16,7 +29,7 @@ const Cards = () => {
           title="Painting"
           description="At ArtFactory, we incorporate the classic practice of painting into most of our events, 
                       providing therapeutic experience for most art enjoyers."
-          className="bg-art-purple"
+          className="bg-art-purple-200"
         />
         <ProjectType
           icon={pencil}
@@ -30,7 +43,7 @@ const Cards = () => {
           title="Crafting"
           description="Crafting activities are exciting ways to incorporate creativity with practicality. 
                       Our club offers fun and interactive crafting events with supply included."
-          className="bg-art-purple"
+          className="bg-art-purple-200"
         />
       </div>
 
@@ -40,7 +53,7 @@ const Cards = () => {
           title="DIY"
           description="DIY provides the manufacturing experience of our daily objects. With these activities, 
                       members can have a sentimental connection with modern availability and appreciation for craftsmanship."
-          className="bg-art-purple"
+          className="bg-art-purple-200"
         />
         <ProjectType
           icon={Vector}
