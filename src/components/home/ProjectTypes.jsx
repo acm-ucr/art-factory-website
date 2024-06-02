@@ -7,18 +7,18 @@ import hand from "@/public/cards/hand.svg";
 import origami from "@/public/cards/origami.svg";
 import pencil from "@/public/cards/pencil.svg";
 import Vector from "@/public/cards/Vector.svg";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
-const animate = {
-  start: {
-    opacity: 0,
-    y: 50,
-  },
-  end: {
-    opacity: 1,
-    y: 0,
-  },
-};
+// const animate = {
+//   start: {
+//     opacity: 0,
+//     y: 50,
+//   },
+//   end: {
+//     opacity: 1,
+//     y: 0,
+//   },
+// };
 
 const Cards = () => {
   return (
