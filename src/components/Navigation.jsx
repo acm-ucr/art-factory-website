@@ -15,7 +15,7 @@ const Navigation = () => {
   };
 
   return (
-    <div className="px-2 md:px-8 sticky py-3 top-0 z-30 bg-art-purple-100 w-screen flex justify-between items-center text-xl sm:text-xl md:text-xl lg:text-2xl">
+    <div className="px-2 md:px-8 sticky py-3 top-0 z-30 bg-art-purple-100 w-screen flex justify-between items-center text-xl sm:text-2xl md:text-xl lg:text-2xl">
       <Link
         onClick={() => {
           setSelected("");
@@ -30,28 +30,31 @@ const Navigation = () => {
         />
         Art Factory
       </Link>
-      <div className="hidden md:flex justify-end w-full pr-10 gap-4 space-x-2">
-        {" "}
-        {/* Add space-x-2 class */}
+      <div className="hidden md:flex justify-end w-full pr-2 gap-4 space-x-2">
         {items.map((item, index) => (
-          <Link
-            href={item.link}
-            key={index}
-            onClick={() => {
-              setSelected(item.name);
-              handleNav();
-            }}
-            className={`hover:text-pink-300 duration-300 border-solid font-semibold py-2 mx-2 ${
-              /* Add mx-2 class */
-              selected === item.name
-                ? ""
-                : item.name === "JOIN"
-                ? "bg-gradient-to-r from-art-pink-200 to-art-purple-200 rounded-full px-12 text-white"
-                : "text-white"
-            }`}
-          >
-            {item.name}
-          </Link>
+          <div key={index} className="relative">
+            <Link
+              href={item.link}
+              onClick={() => {
+                setSelected(item.name);
+                handleNav();
+              }}
+              className={`hover:text-art-pink-100 duration-300 border-solid font-semibold py-2 mx-2 ${
+                selected === item.name
+                  ? item.name === "JOIN"
+                    ? "bg-gradient-to-r from-art-pink-200 to-art-purple-200 rounded-full px-12 text-white"
+                    : "text-art-pink-100"
+                  : item.name === "JOIN"
+                  ? "bg-gradient-to-r from-art-pink-200 to-art-purple-200 rounded-full px-12 text-white"
+                  : "text-white"
+              }`}
+            >
+              {item.name}
+            </Link>
+            {selected === item.name && item.name !== "JOIN" && (
+              <div className="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-2 h-2 rounded-full bg-pink-300"></div>
+            )}
+          </div>
         ))}
       </div>
       {/* mobile menu */}
@@ -61,7 +64,7 @@ const Navigation = () => {
           nav
             ? "transition transform ease-out duration-500 translate-y-[68px] opacity-100"
             : "hidden transition duration-500 ease-in transform -translate-y-24 opacity-0"
-        } md:hidden flex flex-col items-center justify-evenly w-full duration-500 bg-white top-0 left-0 right-0 -z-10`}
+        } md:hidden flex flex-col items-center justify-evenly w-full duration-500 bg-art-purple-100 top-0 left-0 right-0 -z-10`}
       >
         {items.map((item, index) => (
           <Link
@@ -71,13 +74,17 @@ const Navigation = () => {
               setSelected(item.name);
               handleNav();
             }}
-            className={`hover:text-swim-blue-300 duration-300 border-solid font-semibold py-2 ${
+            className={`hover:text-art-pink-100 duration-300 border-solid font-semibold py-2 mx-2 ${
               selected === item.name
-                ? "border-b-2 border-swim-yellow text-swim-blue-300"
-                : "text-black"
+                ? item.name === "JOIN"
+                  ? "text-art-pink-100"
+                  : "text-art-pink-100"
+                : item.name === "JOIN"
+                ? "text-white"
+                : "text-white"
             }`}
           >
-            {item.name}
+            {item.name === "JOIN" ? "join" : item.name}
           </Link>
         ))}
       </div>
