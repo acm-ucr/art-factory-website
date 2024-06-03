@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const animate = {
   start: {
     opacity: 0,
-    y: 30,
+    y: 40,
   },
   end: {
     opacity: 1,
@@ -30,7 +30,7 @@ const What = () => {
         variants={animate}
         initial="start"
         whileInView="end"
-        transition={{ delay: 0.4 }}
+        transition={{ delay: 0.25 }}
       >
         ArtFactory at UCR is a vibrant community of artists established in
         spring 2023. Our mission? To cultivate creativity and exploration across
@@ -43,7 +43,7 @@ const What = () => {
         variants={animate}
         initial="start"
         whileInView="end"
-        transition={{ delay: 0.6 }}
+        transition={{ delay: 0.5 }}
       >
         <Button text="LEARN MORE" link="/about" />
       </motion.p>
@@ -51,7 +51,7 @@ const What = () => {
         variants={animate}
         initial="start"
         whileInView="end"
-        transition={{ delay: 0.8 }}
+        transition={{ delay: 0.6 }}
       >
         <Title text="What We Do" />
       </motion.div>
@@ -60,7 +60,7 @@ const What = () => {
         variants={animate}
         initial="start"
         whileInView="end"
-        transition={{ delay: 0.9 }}
+        transition={{ delay: 0.85 }}
       >
         Here at ArtFactory, we use our time to explore different artistic
         mediums. We come together as a community to explore different artistic
