@@ -1,13 +1,40 @@
+"use client";
 import React from "react";
 import { socials } from "@/data/socials.js";
 import Title from "../Title";
+import { motion } from "framer-motion";
+
+const animate = {
+  start: {
+    opacity: 0,
+    y: 30,
+  },
+  end: {
+    opacity: 1,
+    y: 0,
+  },
+};
 
 const Socials = () => {
   return (
     <div className="w-5/6">
       <div className="flex flex-col items-center">
-        <Title text="Get Involved" />
-        <div className="gap-x-24 mx-auto flex justify-between ">
+        <motion.div
+          variants={animate}
+          initial="start"
+          whileInView="end"
+          transition={{ delay: 0.2 }}
+        >
+          <Title text="Get Involved" />
+        </motion.div>
+
+        <motion.div
+          variants={animate}
+          initial="start"
+          whileInView="end"
+          transition={{ delay: 0.4 }}
+          className="gap-x-24 mx-auto flex justify-between "
+        >
           {socials.map((social, index) => (
             <div
               key={index}
@@ -17,7 +44,7 @@ const Socials = () => {
               <p className="text-base font-bold">{social.name}</p>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
