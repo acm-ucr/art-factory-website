@@ -11,10 +11,10 @@ const Error = () => {
         </div>
         <div className="flex-col items-center text-center md:mt-14 w-11/12">
           <div className="flex-col inline-flex">
-            <div className="flex justify-center bg-clip-text text-transparent bg-gradient-to-r from-art-pink-300 to-art-purple-200 text-2xl md:text-4xl font-bold ">
+            <div className="flex justify-center bg-clip-text text-transparent bg-gradient-to-r from-art-pink-100 to-art-purple-200 text-2xl md:text-4xl font-bold ">
               404
             </div>
-            <div className="mt-2 w-20 h-1 bg-art-pink-300 rounded-lg" />
+            <div className="mt-2 w-20 h-1 bg-art-pink-100 rounded-lg" />
           </div>
           <p className="text-art-purple-100 text-center text-2xl font-bold pt-4">
             Page Not Found
