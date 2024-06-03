@@ -16,10 +16,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex gap-10 items-center mr-4">
-        <FaDiscord className="text-4xl text-white" />
-        <FaInstagram className="text-4xl text-white" />
-        <IoMailOutline className="text-4xl text-white" />
-        <RiTiktokLine className="text-4xl text-white" />
+        <FaDiscord className="text-4xl text-white hover:scale-110" />
+        <FaInstagram className="text-4xl text-white hover:scale-110" />
+        <IoMailOutline className="text-4xl text-white hover:scale-110" />
+        <RiTiktokLine className="text-4xl text-white hover:scale-110" />
       </div>
     </div>
   );
