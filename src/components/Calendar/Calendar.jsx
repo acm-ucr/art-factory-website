@@ -76,7 +76,7 @@ const CalendarEvent = () => {
       <div className="h-[100vh] w-10/12 relative mt-10 mb-56 bg-art-pink-400 border-art-purple rounded-xl shadow-[10px_10px_10px_0px] shadow-art-purple-400 z-0 font-">
         <Calendar
           date={date}
-          className="w-full m-0 p-0 text-md md:text-2xl "
+          className="w-full m-0 p-0 text-sm md:text-2xl "
           allDayAccessor="allDay"
           showAllEvents={true}
           events={events}
