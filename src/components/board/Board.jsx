@@ -7,7 +7,6 @@ const Board = ({ name, title, image, custom }) => {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
-  git;
   const imageVariants = {
     hover: { scale: 1.1 },
   };
