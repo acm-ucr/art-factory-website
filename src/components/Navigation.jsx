@@ -52,13 +52,12 @@ const Navigation = () => {
               {item.name}
             </Link>
             {selected === item.name && item.name !== "JOIN" && (
-              <div className="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-2 h-2 rounded-full bg-pink-300"></div>
+              <div className="absolute bottom-[-8px] left-1/2 transform -translate-x-1/2 w-2 h-2 rounded-full bg-art-pink-100"></div>
             )}
           </div>
         ))}
       </div>
       {/* mobile menu */}
-
       <div
         className={`fixed ${
           nav
@@ -75,16 +74,10 @@ const Navigation = () => {
               handleNav();
             }}
             className={`hover:text-art-pink-100 duration-300 border-solid font-semibold py-2 mx-2 ${
-              selected === item.name
-                ? item.name === "JOIN"
-                  ? "text-art-pink-100"
-                  : "text-art-pink-100"
-                : item.name === "JOIN"
-                ? "text-white"
-                : "text-white"
+              selected === item.name ? "text-art-pink-100" : "text-white"
             }`}
           >
-            {item.name === "JOIN" ? "join" : item.name}
+            {item.name}
           </Link>
         ))}
       </div>
