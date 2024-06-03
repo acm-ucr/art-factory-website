@@ -15,22 +15,24 @@ const Navigation = () => {
   };
 
   return (
-    <div className="px-2 md:px-8 sticky py-3 top-0 z-30 bg-art-purple-100 w-screen flex justify-between items-center text-xl sm:text-2xl md:text-xl lg:text-2xl">
+    <div className="px-2 md:px-8 sticky py-3 top-0 z-30 bg-art-purple-100 w-screen flex justify-between items-center text-2xl sm:text-2xl md:text-xl lg:text-2xl">
       <Link
         onClick={() => {
           setSelected("");
         }}
         href="/"
-        className="flex gap-2 text-white items-center"
+        className="flex items-center"
       >
         <Image
           src={Logo}
           alt="Logo"
-          className="left-0 w-12 md:w-16 hover:opacity-60 duration-300 font-semibold"
+          className="left-0 w-12 md:w-14 lg:w-16 hover:opacity-60 duration-300 font-semibold"
         />
-        Art Factory
+        <span className="sm:text-2xl md:text-xl lg:text-2xl text-white whitespace-nowrap ml-2">
+          Art Factory
+        </span>
       </Link>
-      <div className="hidden md:flex justify-end w-full pr-2 gap-4 space-x-2">
+      <div className="hidden md:flex justify-end w-full gap-4 space-x-2">
         {items.map((item, index) => (
           <div key={index} className="relative">
             <Link
