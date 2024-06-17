@@ -38,7 +38,7 @@ const Socials = () => {
           {socials.map((social, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-4xl lg:text-7xl text-art-pink-100 hover:text-art-purple-100 hover:scale-105 mt-5"
+              className="flex flex-col items-center text-4xl md:text-7xl text-art-pink-100 hover:text-art-purple-100 hover:scale-105 mt-5"
             >
               {social.icon}
               <p className="text-base font-bold">{social.name}</p>
