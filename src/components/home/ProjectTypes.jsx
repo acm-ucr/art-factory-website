@@ -28,7 +28,7 @@ const Cards = () => {
         initial="start"
         whileInView="end"
         transition={{ type: "spring", stiffness: 500, delay: 0.4 }}
-        className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center"
       >
         <motion.div
           whileHover={{
@@ -78,7 +78,7 @@ const Cards = () => {
         initial="start"
         whileInView="end"
         transition={{ type: "spring", stiffness: 500, delay: 0.5 }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 justify-center"
       >
         <motion.div
           whileHover={{
