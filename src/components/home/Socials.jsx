@@ -33,7 +33,7 @@ const Socials = () => {
           initial="start"
           whileInView="end"
           transition={{ delay: 0.4 }}
-          className=" gap-x-7 md:gap-x-24 mx-auto flex justify-between"
+          className="gap-x-7 md:gap-x-24 mx-auto flex justify-between"
         >
           {socials.map((social, index) => (
             <div
