@@ -28,7 +28,7 @@ const Navigation = () => {
           alt="Logo"
           className="left-0 w-12 md:w-14 lg:w-16 hover:opacity-60 duration-300 font-semibold"
         />
-        <span className="sm:text-2xl md:text-xl lg:text-2xl text-white whitespace-nowrap ml-2">
+        <span className="sm:text-2xl md:text-xl lg:text-3xl text-white whitespace-nowrap ml-4">
           Art Factory
         </span>
       </Link>
@@ -41,13 +41,13 @@ const Navigation = () => {
                 setSelected(item.name);
                 handleNav();
               }}
-              className={`hover:text-art-pink-100 duration-300 border-solid font-semibold py-2 mx-2 ${
+              className={`hover:text-art-pink-100 text-3xl duration-300 border-solid font-semibold py-2 mx-2 ${
                 selected === item.name
                   ? item.name === "JOIN"
-                    ? "bg-gradient-to-r from-art-pink-200 to-art-purple-200 rounded-full px-12 text-white"
+                    ? "bg-gradient-to-r from-art-pink-200 text-xl to-art-purple-200 rounded-full px-12 text-white"
                     : "text-art-pink-100"
                   : item.name === "JOIN"
-                  ? "bg-gradient-to-r from-art-pink-200 to-art-purple-200 rounded-full px-12 text-white"
+                  ? "bg-gradient-to-r from-art-pink-200 text-2xl to-art-purple-200 hover:text-white rounded-full px-12 text-white"
                   : "text-white"
               }`}
             >

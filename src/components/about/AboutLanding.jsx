@@ -66,7 +66,7 @@ const AboutLanding = () => {
           alt="landingLogo"
           className=" w-7 mt-3 mr-1 sm:mr-0 sm:w-10 sm:mt-3"
         />
-        <p className="text-white tracking-[2px] text-xs mx-auto">
+        <p className="text-white tracking-[2px] text-base mx-auto">
           learn more about our club
         </p>
       </motion.div>

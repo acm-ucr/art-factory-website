@@ -16,9 +16,16 @@ const GalleryLanding = () => {
       <div className="bg-gradient-to-r from-art-purple-200 to-art-pink-100 bg-clip-text text-transparent ml-6 sm:ml-7 sm:0 text-4xl sm:text-6xl tracking-[10px] sm:tracking-[23px] font-bold mt-20 p-1">
         Art Factory
       </div>
-      <div className="flex items-center bg-art-purple-100 rounded-full mt-1 px-3 w-50 h-7 ml-20 sm:mt-3 sm:px-3 sm:w-96 sm:h-9 sm:ml-10">
-        <Image src={logo} alt="landingLogo" className=" w-10 mt-3" />
-        <p className="text-white tracking-[2px] mx-auto"> photo gallery</p>
+      <div className="flex items-center bg-art-purple-100 rounded-full mt-1 px-3  h-7 ml-20 sm:mt-3 sm:px-3 sm:w-72 sm:h-9 sm:ml-32 overflow-auto z-10">
+        <Image
+          src={logo}
+          alt="landingLogo"
+          className=" scale-75 md:scale-90 mt-3"
+        />
+        <p className="text-white text-base tracking-[2px] mx-auto">
+          {" "}
+          photo gallery
+        </p>
       </div>
 
       <Image
