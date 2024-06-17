@@ -32,7 +32,7 @@ const Navigation = () => {
           Art Factory
         </span>
       </Link>
-      <div className="hidden md:flex justify-end w-full gap-4 space-x-2">
+      <div className="hidden md:flex justify-end w-full lg:gap-4 lg:space-x-2 -mr-6">
         {items.map((item, index) => (
           <div key={index} className="relative">
             <Link
@@ -41,7 +41,7 @@ const Navigation = () => {
                 setSelected(item.name);
                 handleNav();
               }}
-              className={`hover:text-art-pink-100 text-3xl duration-300 border-solid font-semibold py-2 mx-2 ${
+              className={`hover:text-art-pink-100 text-2xl lg:text-3xl duration-300 border-solid font-semibold py-2 mx-2 ${
                 selected === item.name
                   ? item.name === "JOIN"
                     ? "bg-gradient-to-r from-art-pink-200 text-xl to-art-purple-200 rounded-full px-12 text-white"
