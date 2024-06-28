@@ -1,4 +1,5 @@
-import { FaDiscord } from "react-icons/fa";
+import { FaDiscord, FaInstagram } from "react-icons/fa";
+import { IoMailOutline } from "react-icons/io5";
 import { AiFillInstagram } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { FaLink } from "react-icons/fa";
@@ -9,17 +10,35 @@ export const socials = [
   {
     icon: <FaDiscord />,
     name: "Discord",
+    link: "https://discord.gg/QJQ2YH66",
   },
   {
     icon: <AiFillInstagram />,
     name: "Instagram",
+    link: "https://www.instagram.com/artfactory.ucr/",
   },
   {
     icon: <MdEmail />,
     name: "Email",
+    link: "https://www.youtube.com/watch?v=ze-POGS94-k",
   },
   {
     icon: <FaLink className={style} />,
     name: "Highlander",
+    link: "https://www.youtube.com/watch?v=ze-POGS94-k",
+  },
+];
+export const FOOTER = [
+  {
+    icon: <FaDiscord />,
+    link: "https://discord.gg/QJQ2YH66",
+  },
+  {
+    icon: <FaInstagram />,
+    link: "https://www.instagram.com/artfactory.ucr/",
+  },
+  {
+    icon: <IoMailOutline />,
+    link: "https://www.youtube.com/watch?v=ze-POGS94-k",
   },
 ];
