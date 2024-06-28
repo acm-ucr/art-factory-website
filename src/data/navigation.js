@@ -17,6 +17,6 @@ export const items = [
   },
   {
     name: "JOIN",
-    link: "JOIN",
+    link: "https://linktr.ee/artfactory.ucr",
   },
 ];
