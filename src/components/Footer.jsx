@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import paintbrush from "@/public/paint.svg";
-import { FaDiscord, FaInstagram } from "react-icons/fa";
-import { IoMailOutline } from "react-icons/io5";
+import { FOOTER } from "@/data/socials";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -18,10 +18,16 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex gap-4 md:gap-10 text-4xl items-center mr-4">
-        <FaDiscord className=" text-white hover:scale-110" />
-        <FaInstagram className=" text-white hover:scale-110" />
-        <IoMailOutline className=" text-white hover:scale-110" />
-        {/* <RiTiktokLine className="text-4xl text-white hover:scale-110" /> */}
+        {FOOTER.map((social, index) => (
+          <Link
+            key={index}
+            href={social.link}
+            target="_blank"
+            className="text-white hover:scale-110"
+          >
+            {social.icon}
+          </Link>
+        ))}
       </div>
     </div>
   );

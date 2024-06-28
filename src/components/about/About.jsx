@@ -20,7 +20,7 @@ const About = () => {
       variants={animation}
       initial="hidden"
       whileInView="visible"
-      transition={{ delay: 0.2 }}
+      transition={{ delay: 0.4 }}
       className="w-full flex flex-col items-center"
     >
       <Title text="Who We Are" />
@@ -44,7 +44,7 @@ const About = () => {
         variants={animation}
         initial="hidden"
         whileInView="visible"
-        transition={{ delay: 0.6 }}
+        transition={{ delay: 0.4 }}
         className="text-lg mb-8 mt-2 mx-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-80 text-center"
       >
         As college students ourselves, we recognize the importance of balancing
@@ -61,7 +61,7 @@ const About = () => {
         variants={animation}
         initial="hidden"
         whileInView="visible"
-        transition={{ delay: 0.8 }}
+        transition={{ delay: 0.4 }}
       >
         <Title text="What We Do" />
       </motion.div>
@@ -70,7 +70,7 @@ const About = () => {
         variants={animation}
         initial="hidden"
         whileInView="visible"
-        transition={{ delay: 1.0 }}
+        transition={{ delay: 0.4 }}
         className="text-lg my-8 mx-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-80 text-center"
       >
         At ArtFactory we do a variety of fun and interactive activities. We do
@@ -87,7 +87,7 @@ const About = () => {
         variants={animation}
         initial="hidden"
         whileInView="visible"
-        transition={{ delay: 1.2 }}
+        transition={{ delay: 0.4 }}
       >
         <Title text="Why Join Art Factory" />
       </motion.div>
@@ -96,7 +96,7 @@ const About = () => {
         variants={animation}
         initial="hidden"
         whileInView="visible"
-        transition={{ delay: 1.4 }}
+        transition={{ delay: 0.4 }}
         className="text-lg mt-8 mb-11 mx-4 sm:mx-10 md:mx-20 lg:mx-40 xl:mx-80 text-center"
       >
         Here at ArtFactory, our mission is to create fun, easy-to-create, and

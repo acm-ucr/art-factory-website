@@ -38,7 +38,7 @@ const Cards = () => {
         >
           <ProjectType
             icon={paintbrush}
-            title="Painting"
+            title="Crafting"
             description="At ArtFactory, we incorporate the classic practice of painting into most of our events, 
                         providing therapeutic experience for most art enjoyers."
             className="bg-art-purple-200"
@@ -52,7 +52,7 @@ const Cards = () => {
         >
           <ProjectType
             icon={pencil}
-            title="Sketching"
+            title="DIY"
             description="Sketching plays a crucial role in most craft activities. With ArtFactory, 
                         members will get to practice with the foundational step of creativity."
             className="bg-art-purple-100"
@@ -66,7 +66,7 @@ const Cards = () => {
         >
           <ProjectType
             icon={hand}
-            title="Crafting"
+            title="Sketching"
             description="Crafting activities are exciting ways to incorporate creativity with practicality. 
                         Our club offers fun and interactive crafting events with supply included."
             className="bg-art-purple-200"
@@ -88,7 +88,7 @@ const Cards = () => {
         >
           <ProjectType
             icon={origami}
-            title="DIY"
+            title="Painting"
             description="DIY provides the manufacturing experience of our daily objects. With these activities, 
                         members can have a sentimental connection with modern availability and appreciation for craftsmanship."
             className="bg-art-purple-200"
