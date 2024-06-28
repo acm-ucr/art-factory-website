@@ -1,4 +1,3 @@
-
 import craft1 from "@/public/gallery/crafting/IMG020.webp";
 import craft2 from "@/public/gallery/crafting/IMG_0518.webp";
 import craft3 from "@/public/gallery/crafting/IMG_3286.PNG";
