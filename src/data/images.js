@@ -9,8 +9,8 @@ import craft8 from "@/public/gallery/crafting/IMG_4821.webp";
 import craft9 from "@/public/gallery/crafting/IMG_4823.webp";
 import craft10 from "@/public/gallery/crafting/IMG011.JPG";
 import craft11 from "@/public/gallery/crafting/IMG_0517.webp";
-import craft12 from "@/public/gallery/crafting/IMG021.webp";
-import craft13 from "@/public/gallery/crafting/IMG022.webp";
+import craft13 from "@/public/gallery/crafting/IMG021.webp";
+import craft12 from "@/public/gallery/crafting/IMG022.jpg";
 
 import diy1 from "@/public/gallery/DIY/IMG_2962.webp";
 import diy2 from "@/public/gallery/DIY/IMG_2964.webp";
