@@ -18,7 +18,7 @@ import diy3 from "@/public/gallery/DIY/IMG_3289.PNG";
 import diy4 from "@/public/gallery/DIY/IMG_4806.webp";
 import diy5 from "@/public/gallery/DIY/IMG_4810.webp";
 import diy6 from "@/public/gallery/DIY/IMG_4813.webp";
-import diy7 from "@/public/gallery/DIY/IMG_4815.webp";
+import diy7 from "@/public/gallery/DIY/IMG_4805.webp";
 import diy8 from "@/public/gallery/DIY/IMG_4816.webp";
 import diy9 from "@/public/gallery/DIY/IMG002.JPG";
 import diy10 from "@/public/gallery/DIY/IMG003.JPG";
@@ -26,6 +26,7 @@ import diy11 from "@/public/gallery/DIY/IMG004.JPG";
 import diy12 from "@/public/gallery/DIY/IMG005.webp";
 import diy13 from "@/public/gallery/DIY/IMG006.JPG";
 import diy14 from "@/public/gallery/DIY/IMG_4808.webp";
+import diy15 from "@/public/gallery/DIY/IMG_4815.webp";
 
 import skecth1 from "@/public/gallery/sketching/IMG008.webp";
 import skecth2 from "@/public/gallery/sketching/IMG009.webp";
@@ -84,6 +85,7 @@ export const ITEMS = {
     { image: diy12 },
     { image: diy13 },
     { image: diy14 },
+    { image: diy15 },
   ],
   "Studio Time": [
     { image: skecth1 },
