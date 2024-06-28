@@ -1,9 +1,9 @@
 import Adreyan from "@/public/board/Adreyan.JPG";
 import Lydia from "@/public/board/Lydia.JPG";
-import Pamela from "../../public/board/Pamela.jpeg";
-import Ricky from "@/public/board/Ricky.jpeg";
-import Rifah from "@/public/board/Rifah.jpeg";
-import Tran from "@/public/board/Tran.jpeg";
+import Pamela from "../../public/board/Pamela.webp";
+import Ricky from "@/public/board/Ricky.webp";
+import Rifah from "@/public/board/Rifah.webp";
+import Tran from "@/public/board/Tran.webp";
 
 export const Board = [
   {
