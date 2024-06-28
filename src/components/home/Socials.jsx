@@ -3,6 +3,7 @@ import React from "react";
 import { socials } from "@/data/socials.js";
 import Title from "../Title";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const animate = {
   start: {
@@ -36,13 +37,15 @@ const Socials = () => {
           className="gap-x-7 md:gap-x-24 mx-auto flex justify-between"
         >
           {socials.map((social, index) => (
-            <div
+            <Link
               key={index}
+              href={social.link}
+              target="_blank"
               className="flex flex-col items-center text-4xl md:text-7xl text-art-pink-100 hover:text-art-purple-100 hover:scale-105 mt-5"
             >
               {social.icon}
               <p className="text-base font-bold">{social.name}</p>
-            </div>
+            </Link>
           ))}
         </motion.div>
       </div>
