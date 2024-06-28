@@ -3,17 +3,32 @@ import hand from "@/public/cards/hand.svg";
 import pencil from "@/public/cards/pencil.svg";
 import origami from "@/public/cards/origami.svg";
 import vector from "@/public/cards/Vector.svg";
-import test from "@/public/jonathan2024.webp";
+
+import craft1 from "@/public/gallery/crafting/IMG_0517.jpg";
+import craft2 from "@/public/gallery/crafting/IMG_0518.jpg";
+import craft3 from "@/public/gallery/crafting/IMG_3286.PNG";
+import craft4 from "@/public/gallery/crafting/IMG_3287.PNG";
+import craft5 from "@/public/gallery/crafting/IMG_3288.PNG";
+import craft6 from "@/public/gallery/crafting/IMG_4819.jpeg";
+import craft7 from "@/public/gallery/crafting/IMG_4820.jpeg";
+import craft8 from "@/public/gallery/crafting/IMG_4821.jpeg";
+import craft9 from "@/public/gallery/crafting/IMG_4823.jpeg";
+import craft10 from "@/public/gallery/crafting/IMG011.jpg";
 
 export const ITEMS = {
-  Clay: [
-    { image: test },
-    { image: pencil },
-    { image: hand },
-    { image: origami },
-    { image: vector },
+  Crafting: [
+    { image: craft1 },
+    { image: craft2 },
+    { image: craft3 },
+    { image: craft4 },
+    { image: craft5 },
+    { image: craft6 },
+    { image: craft7 },
+    { image: craft8 },
+    { image: craft9 },
+    { image: craft10 },
   ],
-  Crafts: [
+  DIY: [
     { image: paintbrush },
     { image: pencil },
     { image: hand },
@@ -27,7 +42,7 @@ export const ITEMS = {
     { image: origami },
     { image: vector },
   ],
-  Paint: [
+  Painting: [
     { image: paintbrush },
     { image: pencil },
     { image: hand },
