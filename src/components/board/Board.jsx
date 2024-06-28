@@ -2,13 +2,13 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const Board = ({ name, title, image, custom }) => {
+const Board = ({ name, title, image, custom, intros }) => {
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
   const imageVariants = {
-    hover: { scale: 1.1 },
+    hover: { scale: 1.05 },
   };
 
   return (
@@ -28,17 +28,19 @@ const Board = ({ name, title, image, custom }) => {
         </div>
       </div>
       <motion.div
-        className="m-4 p-2 md:p-3 rounded-xl shadow-md bg-art-purple-100"
+        className="m-4 p-2 md:p-3 rounded-xl shadow-md bg-art-purple-100 h-full"
         whileHover="hover"
         variants={imageVariants}
       >
         <Image
           src={image}
           alt="profilepic"
-          className="rounded-lg"
-          layout="responsive"
+          className="rounded-lg h-80 object-top object-cover"
         />
       </motion.div>
+      <div className="h-full text-base m-5 text-art-purple-100 relative flex items-start text-center -z-10 mb-12">
+        {intros}
+      </div>
     </motion.div>
   );
 };
