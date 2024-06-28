@@ -45,7 +45,7 @@ const GalleryCards = ({ cards, title }) => {
             <Image
               src={cards[currentCardIndex].image}
               alt={`Image ${currentCardIndex}`}
-              className="rounded-xl p-3"
+              className="rounded-xl p-3 h-60 md:h-80  object-cover"
             />
           </motion.div>
           {cards[currentCardIndex + 1] && (
@@ -58,7 +58,7 @@ const GalleryCards = ({ cards, title }) => {
               <Image
                 src={cards[currentCardIndex + 1].image}
                 alt={`Image ${currentCardIndex + 1}`}
-                className="rounded-xl p-3"
+                className="rounded-xl p-3 h-80  object-cover"
               />
             </motion.div>
           )}
@@ -72,7 +72,7 @@ const GalleryCards = ({ cards, title }) => {
               <Image
                 src={cards[currentCardIndex + 2].image}
                 alt={`Image ${currentCardIndex + 2}`}
-                className="rounded-xl p-3"
+                className="rounded-xl p-3 h-80 object-cover"
               />
             </motion.div>
           )}
