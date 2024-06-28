@@ -28,15 +28,14 @@ const Board = ({ name, title, image, custom, intros }) => {
         </div>
       </div>
       <motion.div
-        className="m-4 p-2 md:p-3 rounded-xl shadow-md bg-art-purple-100"
+        className="m-4 p-2 md:p-3 rounded-xl shadow-md bg-art-purple-100 h-full"
         whileHover="hover"
         variants={imageVariants}
       >
         <Image
           src={image}
           alt="profilepic"
-          className="rounded-lg"
-          layout="responsive"
+          className="rounded-lg h-80 object-top object-cover"
         />
       </motion.div>
       <div className="h-full text-base m-5 text-art-purple-100 relative flex items-start text-center -z-10 mb-12">
