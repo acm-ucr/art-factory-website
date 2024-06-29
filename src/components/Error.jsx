@@ -4,7 +4,7 @@ import errorclouds from "../../public/errorclouds.svg";
 import oopseasel from "../../public/oopseasel.svg";
 const Error = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-fit mx-16 mt-8 md:mt-20">
+    <div className="flex flex-col justify-center items-center h-screen mx-16 mt-8 md:mt-20">
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-2">
         <div>
           <Image src={oopseasel} alt="oopseasel" className="w-10/12" />
