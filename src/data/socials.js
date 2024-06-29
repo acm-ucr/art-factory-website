@@ -25,7 +25,7 @@ export const socials = [
   {
     icon: <FaLink className={style} />,
     name: "Highlander",
-    link: "https://www.youtube.com/watch?v=ze-POGS94-k",
+    link: "https://highlanderlink.ucr.edu/organization/artfactoryucr",
   },
 ];
 export const FOOTER = [
