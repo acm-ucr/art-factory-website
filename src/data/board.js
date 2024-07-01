@@ -1,5 +1,5 @@
-import Adreyan from "@/public/board/Adreyan.JPG";
-import Lydia from "@/public/board/Lydia.JPG";
+import Adreyan from "@/public/board/Adreyan.webp";
+import Lydia from "@/public/board/Lydia.webp";
 import Pamela from "../../public/board/Pamela.webp";
 import Ricky from "@/public/board/Ricky.webp";
 import Rifah from "@/public/board/Rifah.webp";
