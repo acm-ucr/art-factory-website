@@ -1,5 +1,5 @@
 import React from "react";
-import Calendar from "@/data/calendar/Calendar";
+import Calendar from "@/components/calendar/Calendar";
 const page = () => {
   return (
     <div>

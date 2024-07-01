@@ -7,7 +7,7 @@ import CustomToolbar from "./CustomToolbar.jsx";
 import CustomEvent from "./CustomEvents.jsx";
 import CustomHeader from "./CustomHeader.jsx";
 import Modal from "./Modal.jsx";
-import Title from "../../components/Title.jsx";
+import Title from "../Title.jsx";
 // import { motion } from "framer-motion";
 
 const localizer = momentLocalizer(moment);
