@@ -15,7 +15,7 @@ const Navigation = () => {
   };
 
   return (
-    <div className="px-2 md:px-8 sticky py-3 top-0 z-30 bg-art-purple-100 w-screen flex justify-between items-center text-2xl sm:text-2xl md:text-xl lg:text-2xl">
+    <div className="px-2 md:px-12 sticky py-3 top-0 z-30 bg-art-purple-100 w-screen flex justify-between items-center text-2xl sm:text-2xl md:text-xl lg:text-2xl">
       <Link
         onClick={() => {
           setSelected("");
