@@ -20,7 +20,7 @@ export const socials = [
   {
     icon: <MdEmail />,
     name: "Email",
-    link: "https://www.youtube.com/watch?v=ze-POGS94-k",
+    link: "mailto:artfactoryucr@gmail.com",
   },
   {
     icon: <FaLink className={style} />,
@@ -39,6 +39,6 @@ export const FOOTER = [
   },
   {
     icon: <IoMailOutline />,
-    link: "https://www.youtube.com/watch?v=ze-POGS94-k",
+    link: "mailto:artfactoryucr@gmail.com",
   },
 ];
