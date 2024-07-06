@@ -22,7 +22,7 @@ const What = () => {
       initial="start"
       whileInView="end"
       transition={{ delay: 0.2 }}
-      className="w-9/12 flex flex-col items-center text-center gap-10 mb-0"
+      className="w-9/12 flex flex-col items-center text-center gap-5 mb-0"
     >
       <Title text="About Us" />
 
@@ -31,6 +31,7 @@ const What = () => {
         initial="start"
         whileInView="end"
         transition={{ delay: 0.25 }}
+        className="w-full md:w-9/12"
       >
         ArtFactory at UCR is a vibrant community of artists established in
         spring 2023. Our mission? To cultivate creativity and exploration across
@@ -39,14 +40,22 @@ const What = () => {
         to express themselves artistically. Whether you&apos;re a seasoned
         artist or just starting out, you&apos;re welcome here!
       </motion.p>
-      <motion.p
+      <motion.div
         variants={animate}
         initial="start"
         whileInView="end"
         transition={{ delay: 0.5 }}
       >
-        <Button text="LEARN MORE" link="/about" />
-      </motion.p>
+        <motion.p
+          whileHover={{
+            scale: 1.05,
+            transition: { type: "spring", stiffness: 250 },
+          }}
+          className="mt-2 m-4"
+        >
+          <Button text="LEARN MORE" link="/about" />
+        </motion.p>
+      </motion.div>
       <motion.div
         variants={animate}
         initial="start"
