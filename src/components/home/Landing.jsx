@@ -31,7 +31,7 @@ const Landing = () => {
   return (
     <div className="flex justify-center">
       <Image src={landingbg} alt="Landing Picture" className="w-5/6" />
-      <div className="absolute z-10 flex items-center top-[19%] md:top-[45%] 2xl:top-[40%] justify-center px-8">
+      <div className="absolute z-10 flex items-center top-[22%] min-[390px]:top-[18.5%] md:top-[45%] 2xl:top-[40%] justify-center px-8">
         <motion.div
           variants={ringanimations}
           initial="start"
